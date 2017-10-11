@@ -18,14 +18,107 @@ AC-1:
     b.1. Access control policy [Assignment: organization-defined frequency]; and
 
     b.2. Access control procedures [Assignment: organization-defined frequency].
-  family: AC-1 - Access Control
+  family: AC - Access Control
   name: '[Access Control Policy And Procedures]'
+AC-10:
+  description: 'The information system limits the number of concurrent sessions for
+    each [Assignment: organization-defined account and/or account type] to [Assignment:
+    organization-defined number].'
+  family: AC - Access Control
+  name: '[Concurrent Session Control]'
+AC-11:
+  description: >-
+    The information system:
+
+    a. Prevents further access to the system by initiating a session lock after [Assignment:
+    organization-defined time period] of inactivity or upon receiving a request from
+    a user; and
+
+    b. Retains the session lock until the user reestablishes access using established
+    identification and authentication procedures.
+  family: AC - Access Control
+  name: '[Session Lock]'
+AC-12:
+  description: 'The information system automatically terminates a user session after
+    [Assignment: organization-defined conditions or trigger events requiring session
+    disconnect].'
+  family: AC - Access Control
+  name: '[Session Termination]'
+AC-13:
+  description: None
+  family: AC - Access Control
+  name: '[Supervision And Review - Access Control]'
+AC-14:
+  description: >-
+    The organization:
+
+    a. Identifies [Assignment: organization-defined user actions] that can be performed
+    on the information system without identification or authentication consistent
+    with organizational missions/business functions; and
+
+    b. Documents and provides supporting rationale in the security plan for the information
+    system, user actions not requiring identification or authentication.
+  family: AC - Access Control
+  name: '[Permitted Actions Without Identification Or Authentication]'
+AC-15:
+  description: None
+  family: AC - Access Control
+  name: '[Automated Marking]'
+AC-16:
+  description: >-
+    The organization:
+
+    a. Provides the means to associate [Assignment: organization-defined types of
+    security attributes] having [Assignment: organization-defined security attribute
+    values] with information in storage, in process, and/or in transmission;
+
+    b. Ensures that the security attribute associations are made and retained with
+    the information;
+
+    c. Establishes the permitted [Assignment: organization-defined security attributes]
+    for [Assignment: organization-defined information systems]; and
+
+    d. Determines the permitted [Assignment: organization-defined values or ranges]
+    for each of the established security attributes.
+  family: AC - Access Control
+  name: '[Security Attributes]'
+AC-17:
+  description: >-
+    The organization:
+
+    a. Establishes and documents usage restrictions, configuration/connection requirements,
+    and implementation guidance for each type of remote access allowed; and
+
+    b. Authorizes remote access to the information system prior to allowing such connections.
+  family: AC - Access Control
+  name: '[Remote Access]'
+AC-18:
+  description: >-
+    The organization:
+
+    a. Establishes usage restrictions, configuration/connection requirements, and
+    implementation guidance for wireless access; and
+
+    b. Authorizes wireless access to the information system prior to allowing such
+    connections.
+  family: AC - Access Control
+  name: '[Wireless Access]'
+AC-19:
+  description: >-
+    The organization:
+
+    a. Establishes usage restrictions, configuration requirements, connection requirements,
+    and implementation guidance for organization-controlled mobile devices; and
+
+    b. Authorizes the connection of mobile devices to organizational information systems.
+  family: AC - Access Control
+  name: '[Access Control For Mobile Devices]'
 AC-2:
   description: >-
     The organization:
 
-    a. Identifies and selects the following types of information system accounts
-    to support organizational missions/business functions: [Assignment: organization-defined
+    a. Identifies and selects the following types of information system accounts to
+    support organizational missions/business functions: [Assignment: organization-defined
     information system account types];
 
     b. Assigns account managers for information system accounts;
@@ -64,209 +157,34 @@ AC-2:
     j. Reviews accounts for compliance with account management requirements [Assignment:
     organization-defined frequency]; and
 
-    k. Establishes a process for reissuing shared/group account credentials (if
-    deployed) when individuals are removed from the group.
-  family: AC-2 - Access Control
+    k. Establishes a process for reissuing shared/group account credentials (if deployed)
+    when individuals are removed from the group.
+  family: AC - Access Control
   name: '[Account Management]'
-AC-3:
-  description: The information system enforces approved authorizations for logical
-    access to information and system resources in accordance with applicable access
-    control policies.
-  family: AC-3 - Access Control
-  name: '[Access Enforcement]'
-AC-4:
-  description: 'The information system enforces approved authorizations for controlling
-    the flow of information within the system and between interconnected systems
-    based on [Assignment: organization-defined information flow control policies].'
-  family: AC-4 - Access Control
-  name: '[Information Flow Enforcement]'
-AC-5:
-  description: |-
-    The organization:
-    a. Separates [Assignment: organization-defined duties of individuals];
-    b. Documents separation of duties of individuals; and
-    c. Defines information system access authorizations to support separation of duties.
-  family: AC-5 - Access Control
-  name: '[Separation Of Duties]'
-AC-6:
-  description: The organization employs the principle of least privilege, allowing
-    only authorized accesses for users (or processes acting on behalf of users)
-    which are necessary to accomplish assigned tasks in accordance with organizational
-    missions and business functions.
-  family: AC-6 - Access Control
-  name: '[Least Privilege]'
-AC-7:
-  description: >-
-    The information system:
-
-    a. Enforces a limit of [Assignment: organization-defined number] consecutive
-    invalid logon attempts by a user during a [Assignment: organization-defined
-    time period]; and
-
-    b. Automatically [Selection: locks the account/node for an [Assignment: organization-defined
-    time period]; locks the account/node until released by an administrator; delays
-    next logon prompt according to [Assignment: organization-defined delay algorithm]]
-    when the maximum number of unsuccessful attempts is exceeded.
-  family: AC-7 - Access Control
-  name: '[Unsuccessful Logon Attempts]'
-AC-8:
-  description: >-
-    The information system:
-
-    a. Displays to users [Assignment: organization-defined system use notification
-    message or banner] before granting access to the system that provides privacy
-    and security notices consistent with applicable federal laws, Executive Orders,
-    directives, policies, regulations, standards, and guidance and states that:
-
-    a.1. Users are accessing a U.S. Government information system;
-
-    a.2. Information system usage may be monitored, recorded, and subject to audit;
-
-    a.3. Unauthorized use of the information system is prohibited and subject to
-    criminal and civil penalties; and
-
-    a.4. Use of the information system indicates consent to monitoring and recording;
-
-    b. Retains the notification message or banner on the screen until users acknowledge
-    the usage conditions and take explicit actions to log on to or further access
-    the information system; and
-
-    c. For publicly accessible systems:
-
-    c.1. Displays system use information [Assignment: organization-defined conditions],
-    before granting further access;
-
-    c.2. Displays references, if any, to monitoring, recording, or auditing that
-    are consistent with privacy accommodations for such systems that generally prohibit
-    those activities; and
-
-    c.3. Includes a description of the authorized uses of the system.
-  family: AC-8 - Access Control
-  name: '[System Use Notification]'
-AC-9:
-  description: The information system notifies the user, upon successful logon (access)
-    to the system, of the date and time of the last logon (access).
-  family: AC-9 - Access Control
-  name: '[Previous Logon (Access) Notification]'
-AC-10:
-  description: 'The information system limits the number of concurrent sessions
-    for each [Assignment: organization-defined account and/or account type] to [Assignment:
-    organization-defined number].'
-  family: AC-10 - Access Control
-  name: '[Concurrent Session Control]'
-AC-11:
-  description: >-
-    The information system:
-
-    a. Prevents further access to the system by initiating a session lock after
-    [Assignment: organization-defined time period] of inactivity or upon receiving
-    a request from a user; and
-
-    b. Retains the session lock until the user reestablishes access using established
-    identification and authentication procedures.
-  family: AC-11 - Access Control
-  name: '[Session Lock]'
-AC-12:
-  description: 'The information system automatically terminates a user session after
-    [Assignment: organization-defined conditions or trigger events requiring session
-    disconnect].'
-  family: AC-12 - Access Control
-  name: '[Session Termination]'
-AC-13:
-  description: None
-  family: AC-13 - Access Control
-  name: '[Supervision And Review - Access Control]'
-AC-14:
-  description: >-
-    The organization:
-
-    a. Identifies [Assignment: organization-defined user actions] that can be performed
-    on the information system without identification or authentication consistent
-    with organizational missions/business functions; and
-
-    b. Documents and provides supporting rationale in the security plan for the
-    information system, user actions not requiring identification or authentication.
-  family: AC-14 - Access Control
-  name: '[Permitted Actions Without Identification Or Authentication]'
-AC-15:
-  description: None
-  family: AC-15 - Access Control
-  name: '[Automated Marking]'
-AC-16:
-  description: >-
-    The organization:
-
-    a. Provides the means to associate [Assignment: organization-defined types of
-    security attributes] having [Assignment: organization-defined security attribute
-    values] with information in storage, in process, and/or in transmission;
-
-    b. Ensures that the security attribute associations are made and retained with
-    the information;
-
-    c. Establishes the permitted [Assignment: organization-defined security attributes]
-    for [Assignment: organization-defined information systems]; and
-
-    d. Determines the permitted [Assignment: organization-defined values or ranges]
-    for each of the established security attributes.
-  family: AC-16 - Access Control
-  name: '[Security Attributes]'
-AC-17:
-  description: >-
-    The organization:
-
-    a. Establishes and documents usage restrictions, configuration/connection requirements,
-    and implementation guidance for each type of remote access allowed; and
-
-    b. Authorizes remote access to the information system prior to allowing such
-    connections.
-  family: AC-17 - Access Control
-  name: '[Remote Access]'
-AC-18:
-  description: >-
-    The organization:
-
-    a. Establishes usage restrictions, configuration/connection requirements, and
-    implementation guidance for wireless access; and
-
-    b. Authorizes wireless access to the information system prior to allowing such
-    connections.
-  family: AC-18 - Access Control
-  name: '[Wireless Access]'
-AC-19:
-  description: >-
-    The organization:
-
-    a. Establishes usage restrictions, configuration requirements, connection requirements,
-    and implementation guidance for organization-controlled mobile devices; and
-
-    b. Authorizes the connection of mobile devices to organizational information
-    systems.
-  family: AC-19 - Access Control
-  name: '[Access Control For Mobile Devices]'
 AC-20:
   description: >-
-    The organization establishes terms and conditions, consistent with any trust
-    relationships established with other organizations owning, operating, and/or
-    maintaining external information systems, allowing authorized individuals to:
+    The organization establishes terms and conditions, consistent with any trust relationships
+    established with other organizations owning, operating, and/or maintaining external
+    information systems, allowing authorized individuals to:
 
     a. Access the information system from external information systems; and
 
     b. Process, store, or transmit organization-controlled information using external
     information systems.
-  family: AC-20 - Access Control
+  family: AC - Access Control
   name: '[Use Of External Information Systems]'
 AC-21:
   description: >-
     The organization:
 
-    a. Facilitates information sharing by enabling authorized users to determine
-    whether access authorizations assigned to the sharing partner match the access
-    restrictions on the information for [Assignment: organization-defined information
-    sharing circumstances where user discretion is required]; and
+    a. Facilitates information sharing by enabling authorized users to determine whether
+    access authorizations assigned to the sharing partner match the access restrictions
+    on the information for [Assignment: organization-defined information sharing circumstances
+    where user discretion is required]; and
 
-    b. Employs [Assignment: organization-defined automated mechanisms or manual
-    processes] to assist users in making information sharing/collaboration decisions.
-  family: AC-21 - Access Control
+    b. Employs [Assignment: organization-defined automated mechanisms or manual processes]
+    to assist users in making information sharing/collaboration decisions.
+  family: AC - Access Control
   name: '[Information Sharing]'
 AC-22:
   description: >-
@@ -285,27 +203,106 @@ AC-22:
     d. Reviews the content on the publicly accessible information system for nonpublic
     information [Assignment: organization-defined frequency] and removes such information,
     if discovered.
-  family: AC-22 - Access Control
+  family: AC - Access Control
   name: '[Publicly Accessible Content]'
 AC-23:
-  description: 'The organization employs [Assignment: organization-defined data
-    mining prevention and detection techniques] for [Assignment: organization-defined
-    data storage objects] to adequately detect and protect against data mining.'
-  family: AC-23 - Access Control
+  description: 'The organization employs [Assignment: organization-defined data mining
+    prevention and detection techniques] for [Assignment: organization-defined data
+    storage objects] to adequately detect and protect against data mining.'
+  family: AC - Access Control
   name: '[Data Mining Protection]'
 AC-24:
   description: 'The organization establishes procedures to ensure [Assignment: organization-defined
-    access control decisions] are applied to each access request prior to access
-    enforcement.'
-  family: AC-24 - Access Control
+    access control decisions] are applied to each access request prior to access enforcement.'
+  family: AC - Access Control
   name: '[Access Control Decisions]'
 AC-25:
   description: 'The information system implements a reference monitor for [Assignment:
     organization-defined access control policies] that is tamperproof, always invoked,
-    and small enough to be subject to analysis and testing, the completeness of
-    which can be assured.'
-  family: AC-25 - Access Control
+    and small enough to be subject to analysis and testing, the completeness of which
+    can be assured.'
+  family: AC - Access Control
   name: '[Reference Monitor]'
+AC-3:
+  description: The information system enforces approved authorizations for logical
+    access to information and system resources in accordance with applicable access
+    control policies.
+  family: AC - Access Control
+  name: '[Access Enforcement]'
+AC-4:
+  description: 'The information system enforces approved authorizations for controlling
+    the flow of information within the system and between interconnected systems based
+    on [Assignment: organization-defined information flow control policies].'
+  family: AC - Access Control
+  name: '[Information Flow Enforcement]'
+AC-5:
+  description: |-
+    The organization:
+    a. Separates [Assignment: organization-defined duties of individuals];
+    b. Documents separation of duties of individuals; and
+    c. Defines information system access authorizations to support separation of duties.
+  family: AC - Access Control
+  name: '[Separation Of Duties]'
+AC-6:
+  description: The organization employs the principle of least privilege, allowing
+    only authorized accesses for users (or processes acting on behalf of users) which
+    are necessary to accomplish assigned tasks in accordance with organizational missions
+    and business functions.
+  family: AC - Access Control
+  name: '[Least Privilege]'
+AC-7:
+  description: >-
+    The information system:
+
+    a. Enforces a limit of [Assignment: organization-defined number] consecutive invalid
+    logon attempts by a user during a [Assignment: organization-defined time period];
+    and
+
+    b. Automatically [Selection: locks the account/node for an [Assignment: organization-defined
+    time period]; locks the account/node until released by an administrator; delays
+    next logon prompt according to [Assignment: organization-defined delay algorithm]]
+    when the maximum number of unsuccessful attempts is exceeded.
+  family: AC - Access Control
+  name: '[Unsuccessful Logon Attempts]'
+AC-8:
+  description: >-
+    The information system:
+
+    a. Displays to users [Assignment: organization-defined system use notification
+    message or banner] before granting access to the system that provides privacy
+    and security notices consistent with applicable federal laws, Executive Orders,
+    directives, policies, regulations, standards, and guidance and states that:
+
+    a.1. Users are accessing a U.S. Government information system;
+
+    a.2. Information system usage may be monitored, recorded, and subject to audit;
+
+    a.3. Unauthorized use of the information system is prohibited and subject to criminal
+    and civil penalties; and
+
+    a.4. Use of the information system indicates consent to monitoring and recording;
+
+    b. Retains the notification message or banner on the screen until users acknowledge
+    the usage conditions and take explicit actions to log on to or further access
+    the information system; and
+
+    c. For publicly accessible systems:
+
+    c.1. Displays system use information [Assignment: organization-defined conditions],
+    before granting further access;
+
+    c.2. Displays references, if any, to monitoring, recording, or auditing that are
+    consistent with privacy accommodations for such systems that generally prohibit
+    those activities; and
+
+    c.3. Includes a description of the authorized uses of the system.
+  family: AC - Access Control
+  name: '[System Use Notification]'
+AC-9:
+  description: The information system notifies the user, upon successful logon (access)
+    to the system, of the date and time of the last logon (access).
+  family: AC - Access Control
+  name: '[Previous Logon (Access) Notification]'
 AT-1:
   description: >-
     The organization:
@@ -313,9 +310,9 @@ AT-1:
     a. Develops, documents, and disseminates to [Assignment: organization-defined
     personnel or roles]:
 
-    a.1. A security awareness and training policy that addresses purpose, scope,
-    roles, responsibilities, management commitment, coordination among organizational
-    entities, and compliance; and
+    a.1. A security awareness and training policy that addresses purpose, scope, roles,
+    responsibilities, management commitment, coordination among organizational entities,
+    and compliance; and
 
     a.2. Procedures to facilitate the implementation of the security awareness and
     training policy and associated security awareness and training controls; and
@@ -327,7 +324,7 @@ AT-1:
 
     b.2. Security awareness and training procedures [Assignment: organization-defined
     frequency].
-  family: AT-1 - Awareness And Training
+  family: AT - Awareness And Training
   name: '[Security Awareness And Training Policy And Procedures]'
 AT-2:
   description: >-
@@ -339,7 +336,7 @@ AT-2:
     b. When required by information system changes; and
 
     c. [Assignment: organization-defined frequency] thereafter.
-  family: AT-2 - Awareness And Training
+  family: AT - Awareness And Training
   name: '[Security Awareness Training]'
 AT-3:
   description: >-
@@ -352,88 +349,164 @@ AT-3:
     b. When required by information system changes; and
 
     c. [Assignment: organization-defined frequency] thereafter.
-  family: AT-3 - Awareness And Training
+  family: AT - Awareness And Training
   name: '[Role-Based Security Training]'
 AT-4:
   description: >-
     The organization:
 
     a. Documents and monitors individual information system security training activities
-    including basic security awareness training and specific information system
-    security training; and
+    including basic security awareness training and specific information system security
+    training; and
 
-    b. Retains individual training records for [Assignment: organization-defined
-    time period].
-  family: AT-4 - Awareness And Training
+    b. Retains individual training records for [Assignment: organization-defined time
+    period].
+  family: AT - Awareness And Training
   name: '[Security Training Records]'
 AT-5:
   description: None
-  family: AT-5 - Awareness And Training
+  family: AT - Awareness And Training
   name: '[Contacts With Security Groups And Associations]'
-AT-1:
+CA-1:
   description: >-
     The organization:
 
     a. Develops, documents, and disseminates to [Assignment: organization-defined
     personnel or roles]:
 
-    a.1. A security awareness and training policy that addresses purpose, scope,
+    a.1. A security assessment and authorization policy that addresses purpose, scope,
     roles, responsibilities, management commitment, coordination among organizational
     entities, and compliance; and
 
-    a.2. Procedures to facilitate the implementation of the security awareness and
-    training policy and associated security awareness and training controls; and
+    a.2. Procedures to facilitate the implementation of the security assessment and
+    authorization policy and associated security assessment and authorization controls;
+    and
 
     b. Reviews and updates the current:
 
-    b.1. Security awareness and training policy [Assignment: organization-defined
+    b.1. Security assessment and authorization policy [Assignment: organization-defined
     frequency]; and
 
-    b.2. Security awareness and training procedures [Assignment: organization-defined
+    b.2. Security assessment and authorization procedures [Assignment: organization-defined
     frequency].
-  family: AT-1 - Awareness And Training
-  name: '[Security Awareness And Training Policy And Procedures]'
-AT-2:
-  description: >-
-    The organization provides basic security awareness training to information system
-    users (including managers, senior executives, and contractors):
-
-    a. As part of initial training for new users;
-
-    b. When required by information system changes; and
-
-    c. [Assignment: organization-defined frequency] thereafter.
-  family: AT-2 - Awareness And Training
-  name: '[Security Awareness Training]'
-AT-3:
-  description: >-
-    The organization provides role-based security training to personnel with assigned
-    security roles and responsibilities:
-
-    a. Before authorizing access to the information system or performing assigned
-    duties;
-
-    b. When required by information system changes; and
-
-    c. [Assignment: organization-defined frequency] thereafter.
-  family: AT-3 - Awareness And Training
-  name: '[Role-Based Security Training]'
-AT-4:
+  family: CA - Security Assessment And Authorization
+  name: '[Security Assessment And Authorization Policy And Procedures]'
+CA-2:
   description: >-
     The organization:
 
-    a. Documents and monitors individual information system security training activities
-    including basic security awareness training and specific information system
-    security training; and
+    a. Develops a security assessment plan that describes the scope of the assessment
+    including:
 
-    b. Retains individual training records for [Assignment: organization-defined
-    time period].
-  family: AT-4 - Awareness And Training
-  name: '[Security Training Records]'
-AT-5:
+    a.1. Security controls and control enhancements under assessment;
+
+    a.2. Assessment procedures to be used to determine security control effectiveness;
+    and
+
+    a.3. Assessment environment, assessment team, and assessment roles and responsibilities;
+
+    b. Assesses the security controls in the information system and its environment
+    of operation [Assignment: organization-defined frequency] to determine the extent
+    to which the controls are implemented correctly, operating as intended, and producing
+    the desired outcome with respect to meeting established security requirements;
+
+    c. Produces a security assessment report that documents the results of the assessment;
+    and
+
+    d. Provides the results of the security control assessment to [Assignment: organization-defined
+    individuals or roles].
+  family: CA - Security Assessment And Authorization
+  name: '[Security Assessments]'
+CA-3:
+  description: >-
+    The organization:
+
+    a. Authorizes connections from the information system to other information systems
+    through the use of Interconnection Security Agreements;
+
+    b. Documents, for each interconnection, the interface characteristics, security
+    requirements, and the nature of the information communicated; and
+
+    c. Reviews and updates Interconnection Security Agreements [Assignment: organization-defined
+    frequency].
+  family: CA - Security Assessment And Authorization
+  name: '[System Interconnections]'
+CA-4:
   description: None
-  family: AT-5 - Awareness And Training
-  name: '[Contacts With Security Groups And Associations]'
+  family: CA - Security Assessment And Authorization
+  name: '[Security Certification]'
+CA-5:
+  description: >-
+    The organization:
+
+    a. Develops a plan of action and milestones for the information system to document
+    the organization�s planned remedial actions to correct weaknesses or deficiencies
+    noted during the assessment of the security controls and to reduce or eliminate
+    known vulnerabilities in the system; and
+
+    b. Updates existing plan of action and milestones [Assignment: organization-defined
+    frequency] based on the findings from security controls assessments, security
+    impact analyses, and continuous monitoring activities.
+  family: CA - Security Assessment And Authorization
+  name: '[Plan Of Action And Milestones]'
+CA-6:
+  description: >-
+    The organization:
+
+    a. Assigns a senior-level executive or manager as the authorizing official for
+    the information system;
+
+    b. Ensures that the authorizing official authorizes the information system for
+    processing before commencing operations; and
+
+    c. Updates the security authorization [Assignment: organization-defined frequency].
+  family: CA - Security Assessment And Authorization
+  name: '[Security Authorization]'
+CA-7:
+  description: >-
+    The organization develops a continuous monitoring strategy and implements a continuous
+    monitoring program that includes:
+
+    a. Establishment of [Assignment: organization-defined metrics] to be monitored;
+
+    b. Establishment of [Assignment: organization-defined frequencies] for monitoring
+    and [Assignment: organization-defined frequencies] for assessments supporting
+    such monitoring;
+
+    c. Ongoing security control assessments in accordance with the organizational
+    continuous monitoring strategy;
+
+    d. Ongoing security status monitoring of organization-defined metrics in accordance
+    with the organizational continuous monitoring strategy;
+
+    e. Correlation and analysis of security-related information generated by assessments
+    and monitoring;
+
+    f. Response actions to address results of the analysis of security-related information;
+    and
+
+    g. Reporting the security status of organization and the information system to
+    [Assignment: organization-defined personnel or roles] [Assignment: organization-defined
+    frequency].
+  family: CA - Security Assessment And Authorization
+  name: '[Continuous Monitoring]'
+CA-8:
+  description: 'The organization conducts penetration testing [Assignment: organization-defined
+    frequency] on [Assignment: organization-defined information systems or system
+    components].'
+  family: CA - Security Assessment And Authorization
+  name: '[Penetration Testing]'
+CA-9:
+  description: >-
+    The organization:
+
+    a. Authorizes internal connections of [Assignment: organization-defined information
+    system components or classes of components] to the information system; and
+
+    b. Documents, for each internal connection, the interface characteristics, security
+    requirements, and the nature of the information communicated.
+  family: CA - Security Assessment And Authorization
+  name: '[Internal System Connections]'
 CM-1:
   description: >-
     The organization:
@@ -441,9 +514,9 @@ CM-1:
     a. Develops, documents, and disseminates to [Assignment: organization-defined
     personnel or roles]:
 
-    a.1. A configuration management policy that addresses purpose, scope, roles,
-    responsibilities, management commitment, coordination among organizational entities,
-    and compliance; and
+    a.1. A configuration management policy that addresses purpose, scope, roles, responsibilities,
+    management commitment, coordination among organizational entities, and compliance;
+    and
 
     a.2. Procedures to facilitate the implementation of the configuration management
     policy and associated configuration management controls; and
@@ -454,12 +527,40 @@ CM-1:
     and
 
     b.2. Configuration management procedures [Assignment: organization-defined frequency].
-  family: CM-1 - Configuration Management
+  family: CM - Configuration Management
   name: '[Configuration Management Policy And Procedures]'
+CM-10:
+  description: >-
+    The organization:
+
+    a. Uses software and associated documentation in accordance with contract agreements
+    and copyright laws;
+
+    b. Tracks the use of software and associated documentation protected by quantity
+    licenses to control copying and distribution; and
+
+    c. Controls and documents the use of peer-to-peer file sharing technology to ensure
+    that this capability is not used for the unauthorized distribution, display, performance,
+    or reproduction of copyrighted work.
+  family: CM - Configuration Management
+  name: '[Software Usage Restrictions]'
+CM-11:
+  description: >-
+    The organization:
+
+    a. Establishes [Assignment: organization-defined policies] governing the installation
+    of software by users;
+
+    b. Enforces software installation policies through [Assignment: organization-defined
+    methods]; and
+
+    c. Monitors policy compliance at [Assignment: organization-defined frequency].
+  family: CM - Configuration Management
+  name: '[User-Installed Software]'
 CM-2:
   description: The organization develops, documents, and maintains under configuration
     control, a current baseline configuration of the information system.
-  family: CM-2 - Configuration Management
+  family: CM - Configuration Management
   name: '[Baseline Configuration]'
 CM-3:
   description: >-
@@ -471,8 +572,7 @@ CM-3:
     and approves or disapproves such changes with explicit consideration for security
     impact analyses;
 
-    c. Documents configuration change decisions associated with the information
-    system;
+    c. Documents configuration change decisions associated with the information system;
 
     d. Implements approved configuration-controlled changes to the information system;
 
@@ -487,17 +587,17 @@ CM-3:
     (e.g., committee, board)] that convenes [Selection (one or more): [Assignment:
     organization-defined frequency]; [Assignment: organization-defined configuration
     change conditions]].
-  family: CM-3 - Configuration Management
+  family: CM - Configuration Management
   name: '[Configuration Change Control]'
 CM-4:
   description: The organization analyzes changes to the information system to determine
     potential security impacts prior to change implementation.
-  family: CM-4 - Configuration Management
+  family: CM - Configuration Management
   name: '[Security Impact Analysis]'
 CM-5:
   description: The organization defines, documents, approves, and enforces physical
     and logical access restrictions associated with changes to the information system.
-  family: CM-5 - Configuration Management
+  family: CM - Configuration Management
   name: '[Access Restrictions For Change]'
 CM-6:
   description: >-
@@ -514,21 +614,20 @@ CM-6:
     settings for [Assignment: organization-defined information system components]
     based on [Assignment: organization-defined operational requirements]; and
 
-    d. Monitors and controls changes to the configuration settings in accordance
-    with organizational policies and procedures.
-  family: CM-6 - Configuration Management
+    d. Monitors and controls changes to the configuration settings in accordance with
+    organizational policies and procedures.
+  family: CM - Configuration Management
   name: '[Configuration Settings]'
 CM-7:
   description: >-
     The organization:
 
-    a. Configures the information system to provide only essential capabilities;
-    and
+    a. Configures the information system to provide only essential capabilities; and
 
     b. Prohibits or restricts the use of the following functions, ports, protocols,
-    and/or services: [Assignment: organization-defined prohibited or restricted
-    functions, ports, protocols, and/or services].
-  family: CM-7 - Configuration Management
+    and/or services: [Assignment: organization-defined prohibited or restricted functions,
+    ports, protocols, and/or services].
+  family: CM - Configuration Management
   name: '[Least Functionality]'
 CM-8:
   description: >-
@@ -544,60 +643,32 @@ CM-8:
     a.3. Is at the level of granularity deemed necessary for tracking and reporting;
     and
 
-    a.4. Includes [Assignment: organization-defined information deemed necessary
-    to achieve effective information system component accountability]; and
+    a.4. Includes [Assignment: organization-defined information deemed necessary to
+    achieve effective information system component accountability]; and
 
     b. Reviews and updates the information system component inventory [Assignment:
     organization-defined frequency].
-  family: CM-8 - Configuration Management
+  family: CM - Configuration Management
   name: '[Information System Component Inventory]'
 CM-9:
   description: >-
     The organization develops, documents, and implements a configuration management
     plan for the information system that:
 
-    a. Addresses roles, responsibilities, and configuration management processes
-    and procedures;
+    a. Addresses roles, responsibilities, and configuration management processes and
+    procedures;
 
-    b. Establishes a process for identifying configuration items throughout the
-    system development life cycle and for managing the configuration of the configuration
+    b. Establishes a process for identifying configuration items throughout the system
+    development life cycle and for managing the configuration of the configuration
     items;
 
-    c. Defines the configuration items for the information system and places the
-    configuration items under configuration management; and
+    c. Defines the configuration items for the information system and places the configuration
+    items under configuration management; and
 
     d. Protects the configuration management plan from unauthorized disclosure and
     modification.
-  family: CM-9 - Configuration Management
+  family: CM - Configuration Management
   name: '[Configuration Management Plan]'
-CM-10:
-  description: >-
-    The organization:
-
-    a. Uses software and associated documentation in accordance with contract agreements
-    and copyright laws;
-
-    b. Tracks the use of software and associated documentation protected by quantity
-    licenses to control copying and distribution; and
-
-    c. Controls and documents the use of peer-to-peer file sharing technology to
-    ensure that this capability is not used for the unauthorized distribution, display,
-    performance, or reproduction of copyrighted work.
-  family: CM-10 - Configuration Management
-  name: '[Software Usage Restrictions]'
-CM-11:
-  description: >-
-    The organization:
-
-    a. Establishes [Assignment: organization-defined policies] governing the installation
-    of software by users;
-
-    b. Enforces software installation policies through [Assignment: organization-defined
-    methods]; and
-
-    c. Monitors policy compliance at [Assignment: organization-defined frequency].
-  family: CM-11 - Configuration Management
-  name: '[User-Installed Software]'
 CP-1:
   description: >-
     The organization:
@@ -609,8 +680,8 @@ CP-1:
     management commitment, coordination among organizational entities, and compliance;
     and
 
-    a.2. Procedures to facilitate the implementation of the contingency planning
-    policy and associated contingency planning controls; and
+    a.2. Procedures to facilitate the implementation of the contingency planning policy
+    and associated contingency planning controls; and
 
     b. Reviews and updates the current:
 
@@ -618,8 +689,32 @@ CP-1:
     and
 
     b.2. Contingency planning procedures [Assignment: organization-defined frequency].
-  family: CP-1 - Contingency Planning
+  family: CP - Contingency Planning
   name: '[Contingency Planning Policy And Procedures]'
+CP-10:
+  description: The organization provides for the recovery and reconstitution of the
+    information system to a known state after a disruption, compromise, or failure.
+  family: CP - Contingency Planning
+  name: '[Information System Recovery And Reconstitution]'
+CP-11:
+  description: 'The information system provides the capability to employ [Assignment:
+    organization-defined alternative communications protocols] in support of maintaining
+    continuity of operations.'
+  family: CP - Contingency Planning
+  name: '[Alternate Communications Protocols]'
+CP-12:
+  description: 'The information system, when [Assignment: organization-defined conditions]
+    are detected, enters a safe mode of operation with [Assignment: organization-defined
+    restrictions of safe mode of operation].'
+  family: CP - Contingency Planning
+  name: '[Safe Mode]'
+CP-13:
+  description: 'The organization employs [Assignment: organization-defined alternative
+    or supplemental security mechanisms] for satisfying [Assignment: organization-defined
+    security functions] when the primary means of implementing the security function
+    is unavailable or compromised.'
+  family: CP - Contingency Planning
+  name: '[Alternative Security Mechanisms]'
 CP-2:
   description: >-
     The organization:
@@ -634,14 +729,14 @@ CP-2:
     a.3. Addresses contingency roles, responsibilities, assigned individuals with
     contact information;
 
-    a.4. Addresses maintaining essential missions and business functions despite
-    an information system disruption, compromise, or failure;
+    a.4. Addresses maintaining essential missions and business functions despite an
+    information system disruption, compromise, or failure;
 
     a.5. Addresses eventual, full information system restoration without deterioration
     of the security safeguards originally planned and implemented; and
 
-    a.6. Is reviewed and approved by [Assignment: organization-defined personnel
-    or roles];
+    a.6. Is reviewed and approved by [Assignment: organization-defined personnel or
+    roles];
 
     b. Distributes copies of the contingency plan to [Assignment: organization-defined
     key contingency personnel (identified by name and/or by role) and organizational
@@ -661,7 +756,7 @@ CP-2:
     elements]; and
 
     g. Protects the contingency plan from unauthorized disclosure and modification.
-  family: CP-2 - Contingency Planning
+  family: CP - Contingency Planning
   name: '[Contingency Plan]'
 CP-3:
   description: >-
@@ -674,7 +769,7 @@ CP-3:
     b. When required by information system changes; and
 
     c. [Assignment: organization-defined frequency] thereafter.
-  family: CP-3 - Contingency Planning
+  family: CP - Contingency Planning
   name: '[Contingency Training]'
 CP-4:
   description: >-
@@ -687,11 +782,11 @@ CP-4:
     b. Reviews the contingency plan test results; and
 
     c. Initiates corrective actions, if needed.
-  family: CP-4 - Contingency Planning
+  family: CP - Contingency Planning
   name: '[Contingency Plan Testing]'
 CP-5:
   description: None
-  family: CP-5 - Contingency Planning
+  family: CP - Contingency Planning
   name: '[Contingency Plan Update]'
 CP-6:
   description: >-
@@ -702,7 +797,7 @@ CP-6:
 
     b. Ensures that the alternate storage site provides information security safeguards
     equivalent to that of the primary site.
-  family: CP-6 - Contingency Planning
+  family: CP - Contingency Planning
   name: '[Alternate Storage Site]'
 CP-7:
   description: >-
@@ -711,26 +806,26 @@ CP-7:
     a. Establishes an alternate processing site including necessary agreements to
     permit the transfer and resumption of [Assignment: organization-defined information
     system operations] for essential missions/business functions within [Assignment:
-    organization-defined time period consistent with recovery time and recovery
-    point objectives] when the primary processing capabilities are unavailable;
+    organization-defined time period consistent with recovery time and recovery point
+    objectives] when the primary processing capabilities are unavailable;
 
     b. Ensures that equipment and supplies required to transfer and resume operations
-    are available at the alternate processing site or contracts are in place to
-    support delivery to the site within the organization-defined time period for
-    transfer/resumption; and
+    are available at the alternate processing site or contracts are in place to support
+    delivery to the site within the organization-defined time period for transfer/resumption;
+    and
 
-    c. Ensures that the alternate processing site provides information security
-    safeguards equivalent to those of the primary site.
-  family: CP-7 - Contingency Planning
+    c. Ensures that the alternate processing site provides information security safeguards
+    equivalent to those of the primary site.
+  family: CP - Contingency Planning
   name: '[Alternate Processing Site]'
 CP-8:
   description: 'The organization establishes alternate telecommunications services
     including necessary agreements to permit the resumption of [Assignment: organization-defined
-    information system operations] for essential missions and business functions
-    within [Assignment: organization-defined time period] when the primary telecommunications
+    information system operations] for essential missions and business functions within
+    [Assignment: organization-defined time period] when the primary telecommunications
     capabilities are unavailable at either the primary or alternate processing or
     storage sites.'
-  family: CP-8 - Contingency Planning
+  family: CP - Contingency Planning
   name: '[Telecommunications Services]'
 CP-9:
   description: >-
@@ -740,9 +835,9 @@ CP-9:
     [Assignment: organization-defined frequency consistent with recovery time and
     recovery point objectives];
 
-    b. Conducts backups of system-level information contained in the information
-    system [Assignment: organization-defined frequency consistent with recovery
-    time and recovery point objectives];
+    b. Conducts backups of system-level information contained in the information system
+    [Assignment: organization-defined frequency consistent with recovery time and
+    recovery point objectives];
 
     c. Conducts backups of information system documentation including security-related
     documentation [Assignment: organization-defined frequency consistent with recovery
@@ -750,32 +845,8 @@ CP-9:
 
     d. Protects the confidentiality, integrity, and availability of backup information
     at storage locations.
-  family: CP-9 - Contingency Planning
+  family: CP - Contingency Planning
   name: '[Information System Backup]'
-CP-10:
-  description: The organization provides for the recovery and reconstitution of
-    the information system to a known state after a disruption, compromise, or failure.
-  family: CP-10 - Contingency Planning
-  name: '[Information System Recovery And Reconstitution]'
-CP-11:
-  description: 'The information system provides the capability to employ [Assignment:
-    organization-defined alternative communications protocols] in support of maintaining
-    continuity of operations.'
-  family: CP-11 - Contingency Planning
-  name: '[Alternate Communications Protocols]'
-CP-12:
-  description: 'The information system, when [Assignment: organization-defined conditions]
-    are detected, enters a safe mode of operation with [Assignment: organization-defined
-    restrictions of safe mode of operation].'
-  family: CP-12 - Contingency Planning
-  name: '[Safe Mode]'
-CP-13:
-  description: 'The organization employs [Assignment: organization-defined alternative
-    or supplemental security mechanisms] for satisfying [Assignment: organization-defined
-    security functions] when the primary means of implementing the security function
-    is unavailable or compromised.'
-  family: CP-13 - Contingency Planning
-  name: '[Alternative Security Mechanisms]'
 IA-1:
   description: >-
     The organization:
@@ -797,25 +868,37 @@ IA-1:
 
     b.2. Identification and authentication procedures [Assignment: organization-defined
     frequency].
-  family: IA-1 - Identification And Authentication
+  family: IA - Identification And Authentication
   name: '[Identification And Authentication Policy And Procedures]'
+IA-10:
+  description: 'The organization requires that individuals accessing the information
+    system employ [Assignment: organization-defined supplemental authentication techniques
+    or mechanisms] under specific [Assignment: organization-defined circumstances
+    or situations].'
+  family: IA - Identification And Authentication
+  name: '[Adaptive Identification And Authentication]'
+IA-11:
+  description: 'The organization requires users and devices to re-authenticate when
+    [Assignment: organization-defined circumstances or situations requiring re-authentication].'
+  family: IA - Identification And Authentication
+  name: '[Re-Authentication]'
 IA-2:
   description: The information system uniquely identifies and authenticates organizational
     users (or processes acting on behalf of organizational users).
-  family: IA-2 - Identification And Authentication
+  family: IA - Identification And Authentication
   name: '[Identification And Authentication (Organizational Users)]'
 IA-3:
   description: 'The information system uniquely identifies and authenticates [Assignment:
-    organization-defined specific and/or types of devices] before establishing a
-    [Selection (one or more): local; remote; network] connection.'
-  family: IA-3 - Identification And Authentication
+    organization-defined specific and/or types of devices] before establishing a [Selection
+    (one or more): local; remote; network] connection.'
+  family: IA - Identification And Authentication
   name: '[Device Identification And Authentication]'
 IA-4:
   description: >-
     The organization manages information system identifiers by:
 
-    a. Receiving authorization from [Assignment: organization-defined personnel
-    or roles] to assign an individual, group, role, or device identifier;
+    a. Receiving authorization from [Assignment: organization-defined personnel or
+    roles] to assign an individual, group, role, or device identifier;
 
     b. Selecting an identifier that identifies an individual, group, role, or device;
 
@@ -826,7 +909,7 @@ IA-4:
 
     e. Disabling the identifier after [Assignment: organization-defined time period
     of inactivity].
-  family: IA-4 - Identification And Authentication
+  family: IA - Identification And Authentication
   name: '[Identifier Management]'
 IA-5:
   description: >-
@@ -835,8 +918,8 @@ IA-5:
     a. Verifying, as part of the initial authenticator distribution, the identity
     of the individual, group, role, or device receiving the authenticator;
 
-    b. Establishing initial authenticator content for authenticators defined by
-    the organization;
+    b. Establishing initial authenticator content for authenticators defined by the
+    organization;
 
     c. Ensuring that authenticators have sufficient strength of mechanism for their
     intended use;
@@ -850,54 +933,42 @@ IA-5:
     f. Establishing minimum and maximum lifetime restrictions and reuse conditions
     for authenticators;
 
-    g. Changing/refreshing authenticators [Assignment: organization-defined time
-    period by authenticator type];
+    g. Changing/refreshing authenticators [Assignment: organization-defined time period
+    by authenticator type];
 
     h. Protecting authenticator content from unauthorized disclosure and modification;
 
     i. Requiring individuals to take, and having devices implement, specific security
     safeguards to protect authenticators; and
 
-    j. Changing authenticators for group/role accounts when membership to those
-    accounts changes.
-  family: IA-5 - Identification And Authentication
+    j. Changing authenticators for group/role accounts when membership to those accounts
+    changes.
+  family: IA - Identification And Authentication
   name: '[Authenticator Management]'
 IA-6:
   description: The information system obscures feedback of authentication information
     during the authentication process to protect the information from possible exploitation/use
     by unauthorized individuals.
-  family: IA-6 - Identification And Authentication
+  family: IA - Identification And Authentication
   name: '[Authenticator Feedback]'
 IA-7:
   description: The information system implements mechanisms for authentication to
     a cryptographic module that meet the requirements of applicable federal laws,
-    Executive Orders, directives, policies, regulations, standards, and guidance
-    for such authentication.
-  family: IA-7 - Identification And Authentication
+    Executive Orders, directives, policies, regulations, standards, and guidance for
+    such authentication.
+  family: IA - Identification And Authentication
   name: '[Cryptographic Module Authentication]'
 IA-8:
   description: The information system uniquely identifies and authenticates non-organizational
     users (or processes acting on behalf of non-organizational users).
-  family: IA-8 - Identification And Authentication
+  family: IA - Identification And Authentication
   name: '[Identification And Authentication (Non-Organizational Users)]'
 IA-9:
   description: 'The organization identifies and authenticates [Assignment: organization-defined
     information system services] using [Assignment: organization-defined security
     safeguards].'
-  family: IA-9 - Identification And Authentication
+  family: IA - Identification And Authentication
   name: '[Service Identification And Authentication]'
-IA-10:
-  description: 'The organization requires that individuals accessing the information
-    system employ [Assignment: organization-defined supplemental authentication
-    techniques or mechanisms] under specific [Assignment: organization-defined circumstances
-    or situations].'
-  family: IA-10 - Identification And Authentication
-  name: '[Adaptive Identification And Authentication]'
-IA-11:
-  description: 'The organization requires users and devices to re-authenticate when
-    [Assignment: organization-defined circumstances or situations requiring re-authentication].'
-  family: IA-11 - Identification And Authentication
-  name: '[Re-Authentication]'
 IR-1:
   description: >-
     The organization:
@@ -914,12 +985,16 @@ IR-1:
 
     b. Reviews and updates the current:
 
-    b.1. Incident response policy [Assignment: organization-defined frequency];
-    and
+    b.1. Incident response policy [Assignment: organization-defined frequency]; and
 
     b.2. Incident response procedures [Assignment: organization-defined frequency].
-  family: IR-1 - Incident Response
+  family: IR - Incident Response
   name: '[Incident Response Policy And Procedures]'
+IR-10:
+  description: The organization establishes an integrated team of forensic/malicious
+    code analysts, tool developers, and real-time operations personnel.
+  family: IR - Incident Response
+  name: '[Integrated Information Security Analysis Team]'
 IR-2:
   description: >-
     The organization provides incident response training to information system users
@@ -931,14 +1006,13 @@ IR-2:
     b. When required by information system changes; and
 
     c. [Assignment: organization-defined frequency] thereafter.
-  family: IR-2 - Incident Response
+  family: IR - Incident Response
   name: '[Incident Response Training]'
 IR-3:
-  description: 'The organization tests the incident response capability for the
-    information system [Assignment: organization-defined frequency] using [Assignment:
-    organization-defined tests] to determine the incident response effectiveness
-    and documents the results.'
-  family: IR-3 - Incident Response
+  description: 'The organization tests the incident response capability for the information
+    system [Assignment: organization-defined frequency] using [Assignment: organization-defined
+    tests] to determine the incident response effectiveness and documents the results.'
+  family: IR - Incident Response
   name: '[Incident Response Testing]'
 IR-4:
   description: >-
@@ -953,12 +1027,11 @@ IR-4:
     c. Incorporates lessons learned from ongoing incident handling activities into
     incident response procedures, training, and testing, and implements the resulting
     changes accordingly.
-  family: IR-4 - Incident Response
+  family: IR - Incident Response
   name: '[Incident Handling]'
 IR-5:
-  description: The organization tracks and documents information system security
-    incidents.
-  family: IR-5 - Incident Response
+  description: The organization tracks and documents information system security incidents.
+  family: IR - Incident Response
   name: '[Incident Monitoring]'
 IR-6:
   description: >-
@@ -970,14 +1043,14 @@ IR-6:
 
     b. Reports security incident information to [Assignment: organization-defined
     authorities].
-  family: IR-6 - Incident Response
+  family: IR - Incident Response
   name: '[Incident Reporting]'
 IR-7:
-  description: The organization provides an incident response support resource,
-    integral to the organizational incident response capability that offers advice
-    and assistance to users of the information system for the handling and reporting
-    of security incidents.
-  family: IR-7 - Incident Response
+  description: The organization provides an incident response support resource, integral
+    to the organizational incident response capability that offers advice and assistance
+    to users of the information system for the handling and reporting of security
+    incidents.
+  family: IR - Incident Response
   name: '[Incident Response Assistance]'
 IR-8:
   description: >-
@@ -985,27 +1058,27 @@ IR-8:
 
     a. Develops an incident response plan that:
 
-    a.1. Provides the organization with a roadmap for implementing its incident
-    response capability;
+    a.1. Provides the organization with a roadmap for implementing its incident response
+    capability;
 
     a.2. Describes the structure and organization of the incident response capability;
 
-    a.3. Provides a high-level approach for how the incident response capability
-    fits into the overall organization;
+    a.3. Provides a high-level approach for how the incident response capability fits
+    into the overall organization;
 
     a.4. Meets the unique requirements of the organization, which relate to mission,
     size, structure, and functions;
 
     a.5. Defines reportable incidents;
 
-    a.6. Provides metrics for measuring the incident response capability within
-    the organization;
+    a.6. Provides metrics for measuring the incident response capability within the
+    organization;
 
     a.7. Defines the resources and management support needed to effectively maintain
     and mature an incident response capability; and
 
-    a.8. Is reviewed and approved by [Assignment: organization-defined personnel
-    or roles];
+    a.8. Is reviewed and approved by [Assignment: organization-defined personnel or
+    roles];
 
     b. Distributes copies of the incident response plan to [Assignment: organization-defined
     incident response personnel (identified by name and/or by role) and organizational
@@ -1021,7 +1094,7 @@ IR-8:
     elements]; and
 
     f. Protects the incident response plan from unauthorized disclosure and modification.
-  family: IR-8 - Incident Response
+  family: IR - Incident Response
   name: '[Incident Response Plan]'
 IR-9:
   description: >-
@@ -1036,17 +1109,12 @@ IR-9:
 
     d. Eradicating the information from the contaminated information system or component;
 
-    e. Identifying other information systems or system components that may have
-    been subsequently contaminated; and
+    e. Identifying other information systems or system components that may have been
+    subsequently contaminated; and
 
     f. Performing other [Assignment: organization-defined actions].
-  family: IR-9 - Incident Response
+  family: IR - Incident Response
   name: '[Information Spillage Response]'
-IR-10:
-  description: The organization establishes an integrated team of forensic/malicious
-    code analysts, tool developers, and real-time operations personnel.
-  family: IR-10 - Incident Response
-  name: '[Integrated Information Security Analysis Team]'
 MA-1:
   description: >-
     The organization:
@@ -1063,11 +1131,10 @@ MA-1:
 
     b. Reviews and updates the current:
 
-    b.1. System maintenance policy [Assignment: organization-defined frequency];
-    and
+    b.1. System maintenance policy [Assignment: organization-defined frequency]; and
 
     b.2. System maintenance procedures [Assignment: organization-defined frequency].
-  family: MA-1 - Maintenance
+  family: MA - Maintenance
   name: '[System Maintenance Policy And Procedures]'
 MA-2:
   description: >-
@@ -1085,20 +1152,20 @@ MA-2:
     approve the removal of the information system or system components from organizational
     facilities for off-site maintenance or repairs;
 
-    d. Sanitizes equipment to remove all information from associated media prior
-    to removal from organizational facilities for off-site maintenance or repairs;
+    d. Sanitizes equipment to remove all information from associated media prior to
+    removal from organizational facilities for off-site maintenance or repairs;
 
     e. Checks all potentially impacted security controls to verify that the controls
     are still functioning properly following maintenance or repair actions; and
 
     f. Includes [Assignment: organization-defined maintenance-related information]
     in organizational maintenance records.
-  family: MA-2 - Maintenance
+  family: MA - Maintenance
   name: '[Controlled Maintenance]'
 MA-3:
   description: The organization approves, controls, and monitors information system
     maintenance tools.
-  family: MA-3 - Maintenance
+  family: MA - Maintenance
   name: '[Maintenance Tools]'
 MA-4:
   description: >-
@@ -1116,7 +1183,7 @@ MA-4:
     d. Maintains records for nonlocal maintenance and diagnostic activities; and
 
     e. Terminates session and network connections when nonlocal maintenance is completed.
-  family: MA-4 - Maintenance
+  family: MA - Maintenance
   name: '[Nonlocal Maintenance]'
 MA-5:
   description: >-
@@ -1131,13 +1198,13 @@ MA-5:
     c. Designates organizational personnel with required access authorizations and
     technical competence to supervise the maintenance activities of personnel who
     do not possess the required access authorizations.
-  family: MA-5 - Maintenance
+  family: MA - Maintenance
   name: '[Maintenance Personnel]'
 MA-6:
-  description: 'The organization obtains maintenance support and/or spare parts
-    for [Assignment: organization-defined information system components] within
-    [Assignment: organization-defined time period] of failure.'
-  family: MA-6 - Maintenance
+  description: 'The organization obtains maintenance support and/or spare parts for
+    [Assignment: organization-defined information system components] within [Assignment:
+    organization-defined time period] of failure.'
+  family: MA - Maintenance
   name: '[Timely Maintenance]'
 MP-1:
   description: >-
@@ -1158,13 +1225,13 @@ MP-1:
     b.1. Media protection policy [Assignment: organization-defined frequency]; and
 
     b.2. Media protection procedures [Assignment: organization-defined frequency].
-  family: MP-1 - Media Protection
+  family: MP - Media Protection
   name: '[Media Protection Policy And Procedures]'
 MP-2:
   description: 'The organization restricts access to [Assignment: organization-defined
     types of digital and/or non-digital media] to [Assignment: organization-defined
     personnel or roles].'
-  family: MP-2 - Media Protection
+  family: MP - Media Protection
   name: '[Media Access]'
 MP-3:
   description: >-
@@ -1176,19 +1243,19 @@ MP-3:
     b. Exempts [Assignment: organization-defined types of information system media]
     from marking as long as the media remain within [Assignment: organization-defined
     controlled areas].
-  family: MP-3 - Media Protection
+  family: MP - Media Protection
   name: '[Media Marking]'
 MP-4:
   description: >-
     The organization:
 
-    a. Physically controls and securely stores [Assignment: organization-defined
-    types of digital and/or non-digital media] within [Assignment: organization-defined
+    a. Physically controls and securely stores [Assignment: organization-defined types
+    of digital and/or non-digital media] within [Assignment: organization-defined
     controlled areas]; and
 
     b. Protects information system media until the media are destroyed or sanitized
     using approved equipment, techniques, and procedures.
-  family: MP-4 - Media Protection
+  family: MP - Media Protection
   name: '[Media Storage]'
 MP-5:
   description: >-
@@ -1201,12 +1268,12 @@ MP-5:
     b. Maintains accountability for information system media during transport outside
     of controlled areas;
 
-    c. Documents activities associated with the transport of information system
-    media; and
+    c. Documents activities associated with the transport of information system media;
+    and
 
     d. Restricts the activities associated with the transport of information system
     media to authorized personnel.
-  family: MP-5 - Media Protection
+  family: MP - Media Protection
   name: '[Media Transport]'
 MP-6:
   description: >-
@@ -1214,20 +1281,19 @@ MP-6:
 
     a. Sanitizes [Assignment: organization-defined information system media] prior
     to disposal, release out of organizational control, or release for reuse using
-    [Assignment: organization-defined sanitization techniques and procedures] in
-    accordance with applicable federal and organizational standards and policies;
-    and
+    [Assignment: organization-defined sanitization techniques and procedures] in accordance
+    with applicable federal and organizational standards and policies; and
 
     b. Employs sanitization mechanisms with the strength and integrity commensurate
     with the security category or classification of the information.
-  family: MP-6 - Media Protection
+  family: MP - Media Protection
   name: '[Media Sanitization]'
 MP-7:
   description: 'The organization [Selection: restricts; prohibits] the use of [Assignment:
     organization-defined types of information system media] on [Assignment: organization-defined
     information systems or system components] using [Assignment: organization-defined
     security safeguards].'
-  family: MP-7 - Media Protection
+  family: MP - Media Protection
   name: '[Media Use]'
 MP-8:
   description: >-
@@ -1238,152 +1304,16 @@ MP-8:
     strength and integrity];
 
     b. Ensures that the information system media downgrading process is commensurate
-    with the security category and/or classification level of the information to
-    be removed and the access authorizations of the potential recipients of the
-    downgraded information;
+    with the security category and/or classification level of the information to be
+    removed and the access authorizations of the potential recipients of the downgraded
+    information;
 
     c. Identifies [Assignment: organization-defined information system media requiring
     downgrading]; and
 
-    d. Downgrades the identified information system media using the established
-    process.
-  family: MP-8 - Media Protection
+    d. Downgrades the identified information system media using the established process.
+  family: MP - Media Protection
   name: '[Media Downgrading]'
-PS-1:
-  description: >-
-    The organization:
-
-    a. Develops, documents, and disseminates to [Assignment: organization-defined
-    personnel or roles]:
-
-    a.1. A personnel security policy that addresses purpose, scope, roles, responsibilities,
-    management commitment, coordination among organizational entities, and compliance;
-    and
-
-    a.2. Procedures to facilitate the implementation of the personnel security policy
-    and associated personnel security controls; and
-
-    b. Reviews and updates the current:
-
-    b.1. Personnel security policy [Assignment: organization-defined frequency];
-    and
-
-    b.2. Personnel security procedures [Assignment: organization-defined frequency].
-  family: PS-1 - Personnel Security
-  name: '[Personnel Security Policy And Procedures]'
-PS-2:
-  description: |-
-    The organization:
-    a. Assigns a risk designation to all organizational positions;
-    b. Establishes screening criteria for individuals filling those positions; and
-    c. Reviews and updates position risk designations [Assignment: organization-defined frequency].
-  family: PS-2 - Personnel Security
-  name: '[Position Risk Designation]'
-PS-3:
-  description: >-
-    The organization:
-
-    a. Screens individuals prior to authorizing access to the information system;
-    and
-
-    b. Rescreens individuals according to [Assignment: organization-defined conditions
-    requiring rescreening and, where rescreening is so indicated, the frequency
-    of such rescreening].
-  family: PS-3 - Personnel Security
-  name: '[Personnel Screening]'
-PS-4:
-  description: >-
-    The organization, upon termination of individual employment:
-
-    a. Disables information system access within [Assignment: organization-defined
-    time period];
-
-    b. Terminates/revokes any authenticators/credentials associated with the individual;
-
-    c. Conducts exit interviews that include a discussion of [Assignment: organization-defined
-    information security topics];
-
-    d. Retrieves all security-related organizational information system-related
-    property;
-
-    e. Retains access to organizational information and information systems formerly
-    controlled by terminated individual; and
-
-    f. Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
-    organization-defined time period].
-  family: PS-4 - Personnel Security
-  name: '[Personnel Termination]'
-PS-5:
-  description: >-
-    The organization:
-
-    a. Reviews and confirms ongoing operational need for current logical and physical
-    access authorizations to information systems/facilities when individuals are
-    reassigned or transferred to other positions within the organization;
-
-    b. Initiates [Assignment: organization-defined transfer or reassignment actions]
-    within [Assignment: organization-defined time period following the formal transfer
-    action];
-
-    c. Modifies access authorization as needed to correspond with any changes in
-    operational need due to reassignment or transfer; and
-
-    d. Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
-    organization-defined time period].
-  family: PS-5 - Personnel Security
-  name: '[Personnel Transfer]'
-PS-6:
-  description: >-
-    The organization:
-
-    a. Develops and documents access agreements for organizational information systems;
-
-    b. Reviews and updates the access agreements [Assignment: organization-defined
-    frequency]; and
-
-    c. Ensures that individuals requiring access to organizational information and
-    information systems:
-
-    c.1. Sign appropriate access agreements prior to being granted access; and
-
-    c.2. Re-sign access agreements to maintain access to organizational information
-    systems when access agreements have been updated or [Assignment: organization-defined
-    frequency].
-  family: PS-6 - Personnel Security
-  name: '[Access Agreements]'
-PS-7:
-  description: >-
-    The organization:
-
-    a. Establishes personnel security requirements including security roles and
-    responsibilities for third-party providers;
-
-    b. Requires third-party providers to comply with personnel security policies
-    and procedures established by the organization;
-
-    c. Documents personnel security requirements;
-
-    d. Requires third-party providers to notify [Assignment: organization-defined
-    personnel or roles] of any personnel transfers or terminations of third-party
-    personnel who possess organizational credentials and/or badges, or who have
-    information system privileges within [Assignment: organization-defined time
-    period]; and
-
-    e. Monitors provider compliance.
-  family: PS-7 - Personnel Security
-  name: '[Third-Party Personnel Security]'
-PS-8:
-  description: >-
-    The organization:
-
-    a. Employs a formal sanctions process for individuals failing to comply with
-    established information security policies and procedures; and
-
-    b. Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
-    organization-defined time period] when a formal employee sanctions process is
-    initiated, identifying the individual sanctioned and the reason for the sanction.
-  family: PS-8 - Personnel Security
-  name: '[Personnel Sanctions]'
 PE-1:
   description: >-
     The organization:
@@ -1391,8 +1321,8 @@ PE-1:
     a. Develops, documents, and disseminates to [Assignment: organization-defined
     personnel or roles]:
 
-    a.1. A physical and environmental protection policy that addresses purpose,
-    scope, roles, responsibilities, management commitment, coordination among organizational
+    a.1. A physical and environmental protection policy that addresses purpose, scope,
+    roles, responsibilities, management commitment, coordination among organizational
     entities, and compliance; and
 
     a.2. Procedures to facilitate the implementation of the physical and environmental
@@ -1406,8 +1336,89 @@ PE-1:
 
     b.2. Physical and environmental protection procedures [Assignment: organization-defined
     frequency].
-  family: PE-1 - Physical And Environmental Protection
+  family: PE - Physical And Environmental Protection
   name: '[Physical And Environmental Protection Policy And Procedures]'
+PE-10:
+  description: >-
+    The organization:
+
+    a. Provides the capability of shutting off power to the information system or
+    individual system components in emergency situations;
+
+    b. Places emergency shutoff switches or devices in [Assignment: organization-defined
+    location by information system or system component] to facilitate safe and easy
+    access for personnel; and
+
+    c. Protects emergency power shutoff capability from unauthorized activation.
+  family: PE - Physical And Environmental Protection
+  name: '[Emergency Shutoff]'
+PE-11:
+  description: 'The organization provides a short-term uninterruptible power supply
+    to facilitate [Selection (one or more): an orderly shutdown of the information
+    system; transition of the information system to long-term alternate power] in
+    the event of a primary power source loss.'
+  family: PE - Physical And Environmental Protection
+  name: '[Emergency Power]'
+PE-12:
+  description: The organization employs and maintains automatic emergency lighting
+    for the information system that activates in the event of a power outage or disruption
+    and that covers emergency exits and evacuation routes within the facility.
+  family: PE - Physical And Environmental Protection
+  name: '[Emergency Lighting]'
+PE-13:
+  description: The organization employs and maintains fire suppression and detection
+    devices/systems for the information system that are supported by an independent
+    energy source.
+  family: PE - Physical And Environmental Protection
+  name: '[Fire Protection]'
+PE-14:
+  description: >-
+    The organization:
+
+    a. Maintains temperature and humidity levels within the facility where the information
+    system resides at [Assignment: organization-defined acceptable levels]; and
+
+    b. Monitors temperature and humidity levels [Assignment: organization-defined
+    frequency].
+  family: PE - Physical And Environmental Protection
+  name: '[Temperature And Humidity Controls]'
+PE-15:
+  description: The organization protects the information system from damage resulting
+    from water leakage by providing master shutoff or isolation valves that are accessible,
+    working properly, and known to key personnel.
+  family: PE - Physical And Environmental Protection
+  name: '[Water Damage Protection]'
+PE-16:
+  description: 'The organization authorizes, monitors, and controls [Assignment: organization-defined
+    types of information system components] entering and exiting the facility and
+    maintains records of those items.'
+  family: PE - Physical And Environmental Protection
+  name: '[Delivery And Removal]'
+PE-17:
+  description: >-
+    The organization:
+
+    a. Employs [Assignment: organization-defined security controls] at alternate work
+    sites;
+
+    b. Assesses as feasible, the effectiveness of security controls at alternate work
+    sites; and
+
+    c. Provides a means for employees to communicate with information security personnel
+    in case of security incidents or problems.
+  family: PE - Physical And Environmental Protection
+  name: '[Alternate Work Site]'
+PE-18:
+  description: 'The organization positions information system components within the
+    facility to minimize potential damage from [Assignment: organization-defined physical
+    and environmental hazards] and to minimize the opportunity for unauthorized access.'
+  family: PE - Physical And Environmental Protection
+  name: '[Location Of Information System Components]'
+PE-19:
+  description: The organization protects the information system from information leakage
+    due to electromagnetic signals emanations.
+  family: PE - Physical And Environmental Protection
+  name: '[Information Leakage]'
 PE-2:
   description: >-
     The organization:
@@ -1422,8 +1433,21 @@ PE-2:
 
     d. Removes individuals from the facility access list when access is no longer
     required.
-  family: PE-2 - Physical And Environmental Protection
+  family: PE - Physical And Environmental Protection
   name: '[Physical Access Authorizations]'
+PE-20:
+  description: >-
+    The organization:
+
+    a. Employs [Assignment: organization-defined asset location technologies] to track
+    and monitor the location and movement of [Assignment: organization-defined assets]
+    within [Assignment: organization-defined controlled areas]; and
+
+    b. Ensures that asset location technologies are employed in accordance with applicable
+    federal laws, Executive Orders, directives, regulations, policies, standards,
+    and guidance.
+  family: PE - Physical And Environmental Protection
+  name: '[Asset Monitoring And Tracking]'
 PE-3:
   description: >-
     The organization:
@@ -1435,8 +1459,7 @@ PE-3:
     facility; and
 
     a.2. Controlling ingress/egress to the facility using [Selection (one or more):
-    [Assignment: organization-defined physical access control systems/devices];
-    guards];
+    [Assignment: organization-defined physical access control systems/devices]; guards];
 
     b. Maintains physical access audit logs for [Assignment: organization-defined
     entry/exit points];
@@ -1453,20 +1476,20 @@ PE-3:
     [Assignment: organization-defined frequency]; and
 
     g. Changes combinations and keys [Assignment: organization-defined frequency]
-    and/or when keys are lost, combinations are compromised, or individuals are
-    transferred or terminated.
-  family: PE-3 - Physical And Environmental Protection
+    and/or when keys are lost, combinations are compromised, or individuals are transferred
+    or terminated.
+  family: PE - Physical And Environmental Protection
   name: '[Physical Access Control]'
 PE-4:
   description: 'The organization controls physical access to [Assignment: organization-defined
     information system distribution and transmission lines] within organizational
     facilities using [Assignment: organization-defined security safeguards].'
-  family: PE-4 - Physical And Environmental Protection
+  family: PE - Physical And Environmental Protection
   name: '[Access Control For Transmission Medium]'
 PE-5:
   description: The organization controls physical access to information system output
     devices to prevent unauthorized individuals from obtaining the output.
-  family: PE-5 - Physical And Environmental Protection
+  family: PE - Physical And Environmental Protection
   name: '[Access Control For Output Devices]'
 PE-6:
   description: >-
@@ -1475,17 +1498,17 @@ PE-6:
     a. Monitors physical access to the facility where the information system resides
     to detect and respond to physical security incidents;
 
-    b. Reviews physical access logs [Assignment: organization-defined frequency]
-    and upon occurrence of [Assignment: organization-defined events or potential
-    indications of events]; and
+    b. Reviews physical access logs [Assignment: organization-defined frequency] and
+    upon occurrence of [Assignment: organization-defined events or potential indications
+    of events]; and
 
-    c. Coordinates results of reviews and investigations with the organizational
-    incident response capability.
-  family: PE-6 - Physical And Environmental Protection
+    c. Coordinates results of reviews and investigations with the organizational incident
+    response capability.
+  family: PE - Physical And Environmental Protection
   name: '[Monitoring Physical Access]'
 PE-7:
   description: None
-  family: PE-7 - Physical And Environmental Protection
+  family: PE - Physical And Environmental Protection
   name: '[Visitor Control]'
 PE-8:
   description: >-
@@ -1495,109 +1518,13 @@ PE-8:
     resides for [Assignment: organization-defined time period]; and
 
     b. Reviews visitor access records [Assignment: organization-defined frequency].
-  family: PE-8 - Physical And Environmental Protection
+  family: PE - Physical And Environmental Protection
   name: '[Visitor Access Records]'
 PE-9:
   description: The organization protects power equipment and power cabling for the
     information system from damage and destruction.
-  family: PE-9 - Physical And Environmental Protection
+  family: PE - Physical And Environmental Protection
   name: '[Power Equipment And Cabling]'
-PE-10:
-  description: >-
-    The organization:
-
-    a. Provides the capability of shutting off power to the information system or
-    individual system components in emergency situations;
-
-    b. Places emergency shutoff switches or devices in [Assignment: organization-defined
-    location by information system or system component] to facilitate safe and easy
-    access for personnel; and
-
-    c. Protects emergency power shutoff capability from unauthorized activation.
-  family: PE-10 - Physical And Environmental Protection
-  name: '[Emergency Shutoff]'
-PE-11:
-  description: 'The organization provides a short-term uninterruptible power supply
-    to facilitate [Selection (one or more): an orderly shutdown of the information
-    system; transition of the information system to long-term alternate power] in
-    the event of a primary power source loss.'
-  family: PE-11 - Physical And Environmental Protection
-  name: '[Emergency Power]'
-PE-12:
-  description: The organization employs and maintains automatic emergency lighting
-    for the information system that activates in the event of a power outage or
-    disruption and that covers emergency exits and evacuation routes within the
-    facility.
-  family: PE-12 - Physical And Environmental Protection
-  name: '[Emergency Lighting]'
-PE-13:
-  description: The organization employs and maintains fire suppression and detection
-    devices/systems for the information system that are supported by an independent
-    energy source.
-  family: PE-13 - Physical And Environmental Protection
-  name: '[Fire Protection]'
-PE-14:
-  description: >-
-    The organization:
-
-    a. Maintains temperature and humidity levels within the facility where the information
-    system resides at [Assignment: organization-defined acceptable levels]; and
-
-    b. Monitors temperature and humidity levels [Assignment: organization-defined
-    frequency].
-  family: PE-14 - Physical And Environmental Protection
-  name: '[Temperature And Humidity Controls]'
-PE-15:
-  description: The organization protects the information system from damage resulting
-    from water leakage by providing master shutoff or isolation valves that are
-    accessible, working properly, and known to key personnel.
-  family: PE-15 - Physical And Environmental Protection
-  name: '[Water Damage Protection]'
-PE-16:
-  description: 'The organization authorizes, monitors, and controls [Assignment:
-    organization-defined types of information system components] entering and exiting
-    the facility and maintains records of those items.'
-  family: PE-16 - Physical And Environmental Protection
-  name: '[Delivery And Removal]'
-PE-17:
-  description: >-
-    The organization:
-
-    a. Employs [Assignment: organization-defined security controls] at alternate
-    work sites;
-
-    b. Assesses as feasible, the effectiveness of security controls at alternate
-    work sites; and
-
-    c. Provides a means for employees to communicate with information security personnel
-    in case of security incidents or problems.
-  family: PE-17 - Physical And Environmental Protection
-  name: '[Alternate Work Site]'
-PE-18:
-  description: 'The organization positions information system components within
-    the facility to minimize potential damage from [Assignment: organization-defined
-    physical and environmental hazards] and to minimize the opportunity for unauthorized
-    access.'
-  family: PE-18 - Physical And Environmental Protection
-  name: '[Location Of Information System Components]'
-PE-19:
-  description: The organization protects the information system from information
-    leakage due to electromagnetic signals emanations.
-  family: PE-19 - Physical And Environmental Protection
-  name: '[Information Leakage]'
-PE-20:
-  description: >-
-    The organization:
-
-    a. Employs [Assignment: organization-defined asset location technologies] to
-    track and monitor the location and movement of [Assignment: organization-defined
-    assets] within [Assignment: organization-defined controlled areas]; and
-
-    b. Ensures that asset location technologies are employed in accordance with
-    applicable federal laws, Executive Orders, directives, regulations, policies,
-    standards, and guidance.
-  family: PE-20 - Physical And Environmental Protection
-  name: '[Asset Monitoring And Tracking]'
 PL-1:
   description: >-
     The organization:
@@ -1614,11 +1541,10 @@ PL-1:
 
     b. Reviews and updates the current:
 
-    b.1. Security planning policy [Assignment: organization-defined frequency];
-    and
+    b.1. Security planning policy [Assignment: organization-defined frequency]; and
 
     b.2. Security planning procedures [Assignment: organization-defined frequency].
-  family: PL-1 - Planning
+  family: PL - Planning
   name: '[Security Planning Policy And Procedures]'
 PL-2:
   description: >-
@@ -1630,8 +1556,8 @@ PL-2:
 
     a.2. Explicitly defines the authorization boundary for the system;
 
-    a.3. Describes the operational context of the information system in terms of
-    missions and business processes;
+    a.3. Describes the operational context of the information system in terms of missions
+    and business processes;
 
     a.4. Provides the security categorization of the information system including
     supporting rationale;
@@ -1655,16 +1581,16 @@ PL-2:
     c. Reviews the security plan for the information system [Assignment: organization-defined
     frequency];
 
-    d. Updates the plan to address changes to the information system/environment
-    of operation or problems identified during plan implementation or security control
+    d. Updates the plan to address changes to the information system/environment of
+    operation or problems identified during plan implementation or security control
     assessments; and
 
     e. Protects the security plan from unauthorized disclosure and modification.
-  family: PL-2 - Planning
+  family: PL - Planning
   name: '[System Security Plan]'
 PL-3:
   description: None
-  family: PL-3 - Planning
+  family: PL - Planning
   name: '[System Security Plan Update]'
 PL-4:
   description: >-
@@ -1683,43 +1609,42 @@ PL-4:
 
     d. Requires individuals who have signed a previous version of the rules of behavior
     to read and re-sign when the rules of behavior are revised/updated.
-  family: PL-4 - Planning
+  family: PL - Planning
   name: '[Rules Of Behavior]'
 PL-5:
   description: None
-  family: PL-5 - Planning
+  family: PL - Planning
   name: '[Privacy Impact Assessment]'
 PL-6:
   description: None
-  family: PL-6 - Planning
+  family: PL - Planning
   name: '[Security-Related Activity Planning]'
 PL-7:
   description: >-
     The organization:
 
     a. Develops a security Concept of Operations (CONOPS) for the information system
-    containing at a minimum, how the organization intends to operate the system
-    from the perspective of information security; and
+    containing at a minimum, how the organization intends to operate the system from
+    the perspective of information security; and
 
     b. Reviews and updates the CONOPS [Assignment: organization-defined frequency].
-  family: PL-7 - Planning
+  family: PL - Planning
   name: '[Security Concept Of Operations]'
 PL-8:
   description: >-
     The organization:
 
-    a. Develops an information security architecture for the information system
-    that:
+    a. Develops an information security architecture for the information system that:
 
     a.1. Describes the overall philosophy, requirements, and approach to be taken
     with regard to protecting the confidentiality, integrity, and availability of
     organizational information;
 
-    a.2. Describes how the information security architecture is integrated into
-    and supports the enterprise architecture; and
+    a.2. Describes how the information security architecture is integrated into and
+    supports the enterprise architecture; and
 
-    a.3. Describes any information security assumptions about, and dependencies
-    on, external services;
+    a.3. Describes any information security assumptions about, and dependencies on,
+    external services;
 
     b. Reviews and updates the information security architecture [Assignment: organization-defined
     frequency] to reflect updates in the enterprise architecture; and
@@ -1727,12 +1652,12 @@ PL-8:
     c. Ensures that planned information security architecture changes are reflected
     in the security plan, the security Concept of Operations (CONOPS), and organizational
     procurements/acquisitions.
-  family: PL-8 - Planning
+  family: PL - Planning
   name: '[Information Security Architecture]'
 PL-9:
   description: 'The organization centrally manages [Assignment: organization-defined
     security controls and related processes].'
-  family: PL-9 - Planning
+  family: PL - Planning
   name: '[Central Management]'
 PM-1:
   description: >-
@@ -1741,21 +1666,21 @@ PM-1:
     a. Develops and disseminates an organization-wide information security program
     plan that:
 
-    a.1. Provides an overview of the requirements for the security program and a
-    description of the security program management controls and common controls
-    in place or planned for meeting those requirements;
+    a.1. Provides an overview of the requirements for the security program and a description
+    of the security program management controls and common controls in place or planned
+    for meeting those requirements;
 
-    a.2. Includes the identification and assignment of roles, responsibilities,
-    management commitment, coordination among organizational entities, and compliance;
+    a.2. Includes the identification and assignment of roles, responsibilities, management
+    commitment, coordination among organizational entities, and compliance;
 
-    a.3. Reflects coordination among organizational entities responsible for the
-    different aspects of information security (i.e., technical, physical, personnel,
-    cyber-physical); and
+    a.3. Reflects coordination among organizational entities responsible for the different
+    aspects of information security (i.e., technical, physical, personnel, cyber-physical);
+    and
 
-    a.4. Is approved by a senior official with responsibility and accountability
-    for the risk being incurred to organizational operations (including mission,
-    functions, image, and reputation), organizational assets, individuals, other
-    organizations, and the Nation;
+    a.4. Is approved by a senior official with responsibility and accountability for
+    the risk being incurred to organizational operations (including mission, functions,
+    image, and reputation), organizational assets, individuals, other organizations,
+    and the Nation;
 
     b. Reviews the organization-wide information security program plan [Assignment:
     organization-defined frequency];
@@ -1765,86 +1690,8 @@ PM-1:
 
     d. Protects the information security program plan from unauthorized disclosure
     and modification.
-  family: PM-1 - Program Management
+  family: PM - Program Management
   name: '[Information Security Program Plan]'
-PM-2:
-  description: The organization appoints a senior information security officer with
-    the mission and resources to coordinate, develop, implement, and maintain an
-    organization-wide information security program.
-  family: PM-2 - Program Management
-  name: '[Senior Information Security Officer]'
-PM-3:
-  description: >-
-    The organization:
-
-    a. Ensures that all capital planning and investment requests include the resources
-    needed to implement the information security program and documents all exceptions
-    to this requirement;
-
-    b. Employs a business case/Exhibit 300/Exhibit 53 to record the resources required;
-    and
-
-    c. Ensures that information security resources are available for expenditure
-    as planned.
-  family: PM-3 - Program Management
-  name: '[Information Security Resources]'
-PM-4:
-  description: >-
-    The organization:
-
-    a. Implements a process for ensuring that plans of action and milestones for
-    the security program and associated organizational information systems:
-
-    a.1. Are developed and maintained;
-
-    a.2. Document the remedial information security actions to adequately respond
-    to risk to organizational operations and assets, individuals, other organizations,
-    and the Nation; and
-
-    a.3. Are reported in accordance with OMB FISMA reporting requirements.
-
-    b. Reviews plans of action and milestones for consistency with the organizational
-    risk management strategy and organization-wide priorities for risk response
-    actions.
-  family: PM-4 - Program Management
-  name: '[Plan Of Action And Milestones Process]'
-PM-5:
-  description: The organization develops and maintains an inventory of its information
-    systems.
-  family: PM-5 - Program Management
-  name: '[Information System Inventory]'
-PM-6:
-  description: The organization develops, monitors, and reports on the results of
-    information security measures of performance.
-  family: PM-6 - Program Management
-  name: '[Information Security Measures Of Performance]'
-PM-7:
-  description: The organization develops an enterprise architecture with consideration
-    for information security and the resulting risk to organizational operations,
-    organizational assets, individuals, other organizations, and the Nation.
-  family: PM-7 - Program Management
-  name: '[Enterprise Architecture]'
-PM-8:
-  description: The organization addresses information security issues in the development,
-    documentation, and updating of a critical infrastructure and key resources protection
-    plan.
-  family: PM-8 - Program Management
-  name: '[Critical Infrastructure Plan]'
-PM-9:
-  description: >-
-    The organization:
-
-    a. Develops a comprehensive strategy to manage risk to organizational operations
-    and assets, individuals, other organizations, and the Nation associated with
-    the operation and use of information systems;
-
-    b. Implements the risk management strategy consistently across the organization;
-    and
-
-    c. Reviews and updates the risk management strategy [Assignment: organization-defined
-    frequency] or as required, to address organizational changes.
-  family: PM-9 - Program Management
-  name: '[Risk Management Strategy]'
 PM-10:
   description: >-
     The organization:
@@ -1858,30 +1705,30 @@ PM-10:
 
     c. Fully integrates the security authorization processes into an organization-wide
     risk management program.
-  family: PM-10 - Program Management
+  family: PM - Program Management
   name: '[Security Authorization Process]'
 PM-11:
   description: >-
     The organization:
 
     a. Defines mission/business processes with consideration for information security
-    and the resulting risk to organizational operations, organizational assets,
-    individuals, other organizations, and the Nation; and
+    and the resulting risk to organizational operations, organizational assets, individuals,
+    other organizations, and the Nation; and
 
     b. Determines information protection needs arising from the defined mission/business
     processes and revises the processes as necessary, until achievable protection
     needs are obtained.
-  family: PM-11 - Program Management
+  family: PM - Program Management
   name: '[Mission/Business Process Definition]'
 PM-12:
   description: The organization implements an insider threat program that includes
     a cross-discipline insider threat incident handling team.
-  family: PM-12 - Program Management
+  family: PM - Program Management
   name: '[Insider Threat Program]'
 PM-13:
   description: The organization establishes an information security workforce development
     and improvement program.
-  family: PM-13 - Program Management
+  family: PM - Program Management
   name: '[Information Security Workforce]'
 PM-14:
   description: >-
@@ -1895,31 +1742,238 @@ PM-14:
 
     a.2. Continue to be executed in a timely manner;
 
-    b. Reviews testing, training, and monitoring plans for consistency with the
-    organizational risk management strategy and organization-wide priorities for
-    risk response actions.
-  family: PM-14 - Program Management
+    b. Reviews testing, training, and monitoring plans for consistency with the organizational
+    risk management strategy and organization-wide priorities for risk response actions.
+  family: PM - Program Management
   name: '[Testing, Training, And Monitoring]'
 PM-15:
   description: >-
     The organization establishes and institutionalizes contact with selected groups
     and associations within the security community:
 
-    a. To facilitate ongoing security education and training for organizational
-    personnel;
+    a. To facilitate ongoing security education and training for organizational personnel;
 
-    b. To maintain currency with recommended security practices, techniques, and
-    technologies; and
+    b. To maintain currency with recommended security practices, techniques, and technologies;
+    and
 
     c. To share current security-related information including threats, vulnerabilities,
     and incidents.
-  family: PM-15 - Program Management
+  family: PM - Program Management
   name: '[Contacts With Security Groups And Associations]'
 PM-16:
   description: The organization implements a threat awareness program that includes
     a cross-organization information-sharing capability.
-  family: PM-16 - Program Management
+  family: PM - Program Management
   name: '[Threat Awareness Program]'
+PM-2:
+  description: The organization appoints a senior information security officer with
+    the mission and resources to coordinate, develop, implement, and maintain an organization-wide
+    information security program.
+  family: PM - Program Management
+  name: '[Senior Information Security Officer]'
+PM-3:
+  description: >-
+    The organization:
+
+    a. Ensures that all capital planning and investment requests include the resources
+    needed to implement the information security program and documents all exceptions
+    to this requirement;
+
+    b. Employs a business case/Exhibit 300/Exhibit 53 to record the resources required;
+    and
+
+    c. Ensures that information security resources are available for expenditure as
+    planned.
+  family: PM - Program Management
+  name: '[Information Security Resources]'
+PM-4:
+  description: >-
+    The organization:
+
+    a. Implements a process for ensuring that plans of action and milestones for the
+    security program and associated organizational information systems:
+
+    a.1. Are developed and maintained;
+
+    a.2. Document the remedial information security actions to adequately respond
+    to risk to organizational operations and assets, individuals, other organizations,
+    and the Nation; and
+
+    a.3. Are reported in accordance with OMB FISMA reporting requirements.
+
+    b. Reviews plans of action and milestones for consistency with the organizational
+    risk management strategy and organization-wide priorities for risk response actions.
+  family: PM - Program Management
+  name: '[Plan Of Action And Milestones Process]'
+PM-5:
+  description: The organization develops and maintains an inventory of its information
+    systems.
+  family: PM - Program Management
+  name: '[Information System Inventory]'
+PM-6:
+  description: The organization develops, monitors, and reports on the results of
+    information security measures of performance.
+  family: PM - Program Management
+  name: '[Information Security Measures Of Performance]'
+PM-7:
+  description: The organization develops an enterprise architecture with consideration
+    for information security and the resulting risk to organizational operations,
+    organizational assets, individuals, other organizations, and the Nation.
+  family: PM - Program Management
+  name: '[Enterprise Architecture]'
+PM-8:
+  description: The organization addresses information security issues in the development,
+    documentation, and updating of a critical infrastructure and key resources protection
+    plan.
+  family: PM - Program Management
+  name: '[Critical Infrastructure Plan]'
+PM-9:
+  description: >-
+    The organization:
+
+    a. Develops a comprehensive strategy to manage risk to organizational operations
+    and assets, individuals, other organizations, and the Nation associated with the
+    operation and use of information systems;
+
+    b. Implements the risk management strategy consistently across the organization;
+    and
+
+    c. Reviews and updates the risk management strategy [Assignment: organization-defined
+    frequency] or as required, to address organizational changes.
+  family: PM - Program Management
+  name: '[Risk Management Strategy]'
+PS-1:
+  description: >-
+    The organization:
+
+    a. Develops, documents, and disseminates to [Assignment: organization-defined
+    personnel or roles]:
+
+    a.1. A personnel security policy that addresses purpose, scope, roles, responsibilities,
+    management commitment, coordination among organizational entities, and compliance;
+    and
+
+    a.2. Procedures to facilitate the implementation of the personnel security policy
+    and associated personnel security controls; and
+
+    b. Reviews and updates the current:
+
+    b.1. Personnel security policy [Assignment: organization-defined frequency]; and
+
+    b.2. Personnel security procedures [Assignment: organization-defined frequency].
+  family: PS - Personnel Security
+  name: '[Personnel Security Policy And Procedures]'
+PS-2:
+  description: |-
+    The organization:
+    a. Assigns a risk designation to all organizational positions;
+    b. Establishes screening criteria for individuals filling those positions; and
+    c. Reviews and updates position risk designations [Assignment: organization-defined frequency].
+  family: PS - Personnel Security
+  name: '[Position Risk Designation]'
+PS-3:
+  description: >-
+    The organization:
+
+    a. Screens individuals prior to authorizing access to the information system;
+    and
+
+    b. Rescreens individuals according to [Assignment: organization-defined conditions
+    requiring rescreening and, where rescreening is so indicated, the frequency of
+    such rescreening].
+  family: PS - Personnel Security
+  name: '[Personnel Screening]'
+PS-4:
+  description: >-
+    The organization, upon termination of individual employment:
+
+    a. Disables information system access within [Assignment: organization-defined
+    time period];
+
+    b. Terminates/revokes any authenticators/credentials associated with the individual;
+
+    c. Conducts exit interviews that include a discussion of [Assignment: organization-defined
+    information security topics];
+
+    d. Retrieves all security-related organizational information system-related property;
+
+    e. Retains access to organizational information and information systems formerly
+    controlled by terminated individual; and
+
+    f. Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
+    organization-defined time period].
+  family: PS - Personnel Security
+  name: '[Personnel Termination]'
+PS-5:
+  description: >-
+    The organization:
+
+    a. Reviews and confirms ongoing operational need for current logical and physical
+    access authorizations to information systems/facilities when individuals are reassigned
+    or transferred to other positions within the organization;
+
+    b. Initiates [Assignment: organization-defined transfer or reassignment actions]
+    within [Assignment: organization-defined time period following the formal transfer
+    action];
+
+    c. Modifies access authorization as needed to correspond with any changes in operational
+    need due to reassignment or transfer; and
+
+    d. Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
+    organization-defined time period].
+  family: PS - Personnel Security
+  name: '[Personnel Transfer]'
+PS-6:
+  description: >-
+    The organization:
+
+    a. Develops and documents access agreements for organizational information systems;
+
+    b. Reviews and updates the access agreements [Assignment: organization-defined
+    frequency]; and
+
+    c. Ensures that individuals requiring access to organizational information and
+    information systems:
+
+    c.1. Sign appropriate access agreements prior to being granted access; and
+
+    c.2. Re-sign access agreements to maintain access to organizational information
+    systems when access agreements have been updated or [Assignment: organization-defined
+    frequency].
+  family: PS - Personnel Security
+  name: '[Access Agreements]'
+PS-7:
+  description: >-
+    The organization:
+
+    a. Establishes personnel security requirements including security roles and responsibilities
+    for third-party providers;
+
+    b. Requires third-party providers to comply with personnel security policies and
+    procedures established by the organization;
+
+    c. Documents personnel security requirements;
+
+    d. Requires third-party providers to notify [Assignment: organization-defined
+    personnel or roles] of any personnel transfers or terminations of third-party
+    personnel who possess organizational credentials and/or badges, or who have information
+    system privileges within [Assignment: organization-defined time period]; and
+
+    e. Monitors provider compliance.
+  family: PS - Personnel Security
+  name: '[Third-Party Personnel Security]'
+PS-8:
+  description: >-
+    The organization:
+
+    a. Employs a formal sanctions process for individuals failing to comply with established
+    information security policies and procedures; and
+
+    b. Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
+    organization-defined time period] when a formal employee sanctions process is
+    initiated, identifying the individual sanctioned and the reason for the sanction.
+  family: PS - Personnel Security
+  name: '[Personnel Sanctions]'
 RA-1:
   description: >-
     The organization:
@@ -1939,7 +1993,7 @@ RA-1:
     b.1. Risk assessment policy [Assignment: organization-defined frequency]; and
 
     b.2. Risk assessment procedures [Assignment: organization-defined frequency].
-  family: RA-1 - Risk Assessment
+  family: RA - Risk Assessment
   name: '[Risk Assessment Policy And Procedures]'
 RA-2:
   description: >-
@@ -1952,36 +2006,35 @@ RA-2:
     b. Documents the security categorization results (including supporting rationale)
     in the security plan for the information system; and
 
-    c. Ensures that the authorizing official or authorizing official designated
-    representative reviews and approves the security categorization decision.
-  family: RA-2 - Risk Assessment
+    c. Ensures that the authorizing official or authorizing official designated representative
+    reviews and approves the security categorization decision.
+  family: RA - Risk Assessment
   name: '[Security Categorization]'
 RA-3:
   description: >-
     The organization:
 
-    a. Conducts an assessment of risk, including the likelihood and magnitude of
-    harm, from the unauthorized access, use, disclosure, disruption, modification,
-    or destruction of the information system and the information it processes, stores,
-    or transmits;
+    a. Conducts an assessment of risk, including the likelihood and magnitude of harm,
+    from the unauthorized access, use, disclosure, disruption, modification, or destruction
+    of the information system and the information it processes, stores, or transmits;
 
     b. Documents risk assessment results in [Selection: security plan; risk assessment
     report; [Assignment: organization-defined document]];
 
     c. Reviews risk assessment results [Assignment: organization-defined frequency];
 
-    d. Disseminates risk assessment results to [Assignment: organization-defined
-    personnel or roles]; and
+    d. Disseminates risk assessment results to [Assignment: organization-defined personnel
+    or roles]; and
 
-    e. Updates the risk assessment [Assignment: organization-defined frequency]
-    or whenever there are significant changes to the information system or environment
+    e. Updates the risk assessment [Assignment: organization-defined frequency] or
+    whenever there are significant changes to the information system or environment
     of operation (including the identification of new threats and vulnerabilities),
     or other conditions that may impact the security state of the system.
-  family: RA-3 - Risk Assessment
+  family: RA - Risk Assessment
   name: '[Risk Assessment]'
 RA-4:
   description: None
-  family: RA-4 - Risk Assessment
+  family: RA - Risk Assessment
   name: '[Risk Assessment Update]'
 RA-5:
   description: >-
@@ -2011,155 +2064,320 @@ RA-5:
     control assessments with [Assignment: organization-defined personnel or roles]
     to help eliminate similar vulnerabilities in other information systems (i.e.,
     systemic weaknesses or deficiencies).
-  family: RA-5 - Risk Assessment
+  family: RA - Risk Assessment
   name: '[Vulnerability Scanning]'
 RA-6:
   description: 'The organization employs a technical surveillance countermeasures
     survey at [Assignment: organization-defined locations] [Selection (one or more):
     [Assignment: organization-defined frequency]; [Assignment: organization-defined
     events or indicators occur]].'
-  family: RA-6 - Risk Assessment
+  family: RA - Risk Assessment
   name: '[Technical Surveillance Countermeasures Survey]'
-CA-1:
+SA-1:
   description: >-
     The organization:
 
     a. Develops, documents, and disseminates to [Assignment: organization-defined
     personnel or roles]:
 
-    a.1. A security assessment and authorization policy that addresses purpose,
-    scope, roles, responsibilities, management commitment, coordination among organizational
-    entities, and compliance; and
+    a.1. A system and services acquisition policy that addresses purpose, scope, roles,
+    responsibilities, management commitment, coordination among organizational entities,
+    and compliance; and
 
-    a.2. Procedures to facilitate the implementation of the security assessment
-    and authorization policy and associated security assessment and authorization
-    controls; and
+    a.2. Procedures to facilitate the implementation of the system and services acquisition
+    policy and associated system and services acquisition controls; and
 
     b. Reviews and updates the current:
 
-    b.1. Security assessment and authorization policy [Assignment: organization-defined
+    b.1. System and services acquisition policy [Assignment: organization-defined
     frequency]; and
 
-    b.2. Security assessment and authorization procedures [Assignment: organization-defined
+    b.2. System and services acquisition procedures [Assignment: organization-defined
     frequency].
-  family: CA-1 - Security Assessment And Authorization
-  name: '[Security Assessment And Authorization Policy And Procedures]'
-CA-2:
+  family: SA - System And Services Acquisition
+  name: '[System And Services Acquisition Policy And Procedures]'
+SA-10:
+  description: >-
+    The organization requires the developer of the information system, system component,
+    or information system service to:
+
+    a. Perform configuration management during system, component, or service [Selection
+    (one or more): design; development; implementation; operation];
+
+    b. Document, manage, and control the integrity of changes to [Assignment: organization-defined
+    configuration items under configuration management];
+
+    c. Implement only organization-approved changes to the system, component, or service;
+
+    d. Document approved changes to the system, component, or service and the potential
+    security impacts of such changes; and
+
+    e. Track security flaws and flaw resolution within the system, component, or service
+    and report findings to [Assignment: organization-defined personnel].
+  family: SA - System And Services Acquisition
+  name: '[Developer Configuration Management]'
+SA-11:
+  description: >-
+    The organization requires the developer of the information system, system component,
+    or information system service to:
+
+    a. Create and implement a security assessment plan;
+
+    b. Perform [Selection (one or more): unit; integration; system; regression] testing/evaluation
+    at [Assignment: organization-defined depth and coverage];
+
+    c. Produce evidence of the execution of the security assessment plan and the results
+    of the security testing/evaluation;
+
+    d. Implement a verifiable flaw remediation process; and
+
+    e. Correct flaws identified during security testing/evaluation.
+  family: SA - System And Services Acquisition
+  name: '[Developer Security Testing And Evaluation]'
+SA-12:
+  description: 'The organization protects against supply chain threats to the information
+    system, system component, or information system service by employing [Assignment:
+    organization-defined security safeguards] as part of a comprehensive, defense-in-breadth
+    information security strategy.'
+  family: SA - System And Services Acquisition
+  name: '[Supply Chain Protection]'
+SA-13:
   description: >-
     The organization:
 
-    a. Develops a security assessment plan that describes the scope of the assessment
-    including:
+    a. Describes the trustworthiness required in the [Assignment: organization-defined
+    information system, information system component, or information system service]
+    supporting its critical missions/business functions; and
 
-    a.1. Security controls and control enhancements under assessment;
-
-    a.2. Assessment procedures to be used to determine security control effectiveness;
-    and
-
-    a.3. Assessment environment, assessment team, and assessment roles and responsibilities;
-
-    b. Assesses the security controls in the information system and its environment
-    of operation [Assignment: organization-defined frequency] to determine the extent
-    to which the controls are implemented correctly, operating as intended, and
-    producing the desired outcome with respect to meeting established security requirements;
-
-    c. Produces a security assessment report that documents the results of the assessment;
-    and
-
-    d. Provides the results of the security control assessment to [Assignment: organization-defined
-    individuals or roles].
-  family: CA-2 - Security Assessment And Authorization
-  name: '[Security Assessments]'
-CA-3:
+    b. Implements [Assignment: organization-defined assurance overlay] to achieve
+    such trustworthiness.
+  family: SA - System And Services Acquisition
+  name: '[Trustworthiness]'
+SA-14:
+  description: 'The organization identifies critical information system components
+    and functions by performing a criticality analysis for [Assignment: organization-defined
+    information systems, information system components, or information system services]
+    at [Assignment: organization-defined decision points in the system development
+    life cycle].'
+  family: SA - System And Services Acquisition
+  name: '[Criticality Analysis]'
+SA-15:
   description: >-
     The organization:
 
-    a. Authorizes connections from the information system to other information systems
-    through the use of Interconnection Security Agreements;
+    a. Requires the developer of the information system, system component, or information
+    system service to follow a documented development process that:
 
-    b. Documents, for each interconnection, the interface characteristics, security
-    requirements, and the nature of the information communicated; and
+    a.1. Explicitly addresses security requirements;
 
-    c. Reviews and updates Interconnection Security Agreements [Assignment: organization-defined
-    frequency].
-  family: CA-3 - Security Assessment And Authorization
-  name: '[System Interconnections]'
-CA-4:
+    a.2. Identifies the standards and tools used in the development process;
+
+    a.3. Documents the specific tool options and tool configurations used in the development
+    process; and
+
+    a.4. Documents, manages, and ensures the integrity of changes to the process and/or
+    tools used in development; and
+
+    b. Reviews the development process, standards, tools, and tool options/configurations
+    [Assignment: organization-defined frequency] to determine if the process, standards,
+    tools, and tool options/configurations selected and employed can satisfy [Assignment:
+    organization-defined security requirements].
+  family: SA - System And Services Acquisition
+  name: '[Development Process, Standards, And Tools]'
+SA-16:
+  description: 'The organization requires the developer of the information system,
+    system component, or information system service to provide [Assignment: organization-defined
+    training] on the correct use and operation of the implemented security functions,
+    controls, and/or mechanisms.'
+  family: SA - System And Services Acquisition
+  name: '[Developer-Provided Training]'
+SA-17:
+  description: >-
+    The organization requires the developer of the information system, system component,
+    or information system service to produce a design specification and security architecture
+    that:
+
+    a. Is consistent with and supportive of the organization�s security architecture
+    which is established within and is an integrated part of the organization�s enterprise
+    architecture;
+
+    b. Accurately and completely describes the required security functionality, and
+    the allocation of security controls among physical and logical components; and
+
+    c. Expresses how individual security functions, mechanisms, and services work
+    together to provide required security capabilities and a unified approach to protection.
+  family: SA - System And Services Acquisition
+  name: '[Developer Security Architecture And Design]'
+SA-18:
+  description: The organization implements a tamper protection program for the information
+    system, system component, or information system service.
+  family: SA - System And Services Acquisition
+  name: '[Tamper Resistance And Detection]'
+SA-19:
+  description: >-
+    The organization:
+
+    a. Develops and implements anti-counterfeit policy and procedures that include
+    the means to detect and prevent counterfeit components from entering the information
+    system; and
+
+    b. Reports counterfeit information system components to [Selection (one or more):
+    source of counterfeit component; [Assignment: organization-defined external reporting
+    organizations]; [Assignment: organization-defined personnel or roles]].
+  family: SA - System And Services Acquisition
+  name: '[Component Authenticity]'
+SA-2:
+  description: >-
+    The organization:
+
+    a. Determines information security requirements for the information system or
+    information system service in mission/business process planning;
+
+    b. Determines, documents, and allocates the resources required to protect the
+    information system or information system service as part of its capital planning
+    and investment control process; and
+
+    c. Establishes a discrete line item for information security in organizational
+    programming and budgeting documentation.
+  family: SA - System And Services Acquisition
+  name: '[Allocation Of Resources]'
+SA-20:
+  description: 'The organization re-implements or custom develops [Assignment: organization-defined
+    critical information system components].'
+  family: SA - System And Services Acquisition
+  name: '[Customized Development Of Critical Components]'
+SA-21:
+  description: >-
+    The organization requires that the developer of [Assignment: organization-defined
+    information system, system component, or information system service]:
+
+    a. Have appropriate access authorizations as determined by assigned [Assignment:
+    organization-defined official government duties]; and
+
+    b. Satisfy [Assignment: organization-defined additional personnel screening criteria].
+  family: SA - System And Services Acquisition
+  name: '[Developer Screening]'
+SA-22:
+  description: >-
+    The organization:
+
+    a. Replaces information system components when support for the components is no
+    longer available from the developer, vendor, or manufacturer; and
+
+    b. Provides justification and documents approval for the continued use of unsupported
+    system components required to satisfy mission/business needs.
+  family: SA - System And Services Acquisition
+  name: '[Unsupported System Components]'
+SA-3:
+  description: >-
+    The organization:
+
+    a. Manages the information system using [Assignment: organization-defined system
+    development life cycle] that incorporates information security considerations;
+
+    b. Defines and documents information security roles and responsibilities throughout
+    the system development life cycle;
+
+    c. Identifies individuals having information security roles and responsibilities;
+    and
+
+    d. Integrates the organizational information security risk management process
+    into system development life cycle activities.
+  family: SA - System And Services Acquisition
+  name: '[System Development Life Cycle]'
+SA-4:
+  description: >-
+    The organization includes the following requirements, descriptions, and criteria,
+    explicitly or by reference, in the acquisition contract for the information system,
+    system component, or information system service in accordance with applicable
+    federal laws, Executive Orders, directives, policies, regulations, standards,
+    guidelines, and organizational mission/business needs:
+
+    a. Security functional requirements;
+
+    b. Security strength requirements;
+
+    c. Security assurance requirements;
+
+    d. Security-related documentation requirements;
+
+    e. Requirements for protecting security-related documentation;
+
+    f. Description of the information system development environment and environment
+    in which the system is intended to operate; and
+
+    g. Acceptance criteria.
+  family: SA - System And Services Acquisition
+  name: '[Acquisition Process]'
+SA-5:
+  description: >-
+    The organization:
+
+    a. Obtains administrator documentation for the information system, system component,
+    or information system service that describes:
+
+    a.1. Secure configuration, installation, and operation of the system, component,
+    or service;
+
+    a.2. Effective use and maintenance of security functions/mechanisms; and
+
+    a.3. Known vulnerabilities regarding configuration and use of administrative (i.e.,
+    privileged) functions;
+
+    b. Obtains user documentation for the information system, system component, or
+    information system service that describes:
+
+    b.1. User-accessible security functions/mechanisms and how to effectively use
+    those security functions/mechanisms;
+
+    b.2. Methods for user interaction, which enables individuals to use the system,
+    component, or service in a more secure manner; and
+
+    b.3. User responsibilities in maintaining the security of the system, component,
+    or service;
+
+    c. Documents attempts to obtain information system, system component, or information
+    system service documentation when such documentation is either unavailable or
+    nonexistent and takes [Assignment: organization-defined actions] in response;
+
+    d. Protects documentation as required, in accordance with the risk management
+    strategy; and
+
+    e. Distributes documentation to [Assignment: organization-defined personnel or
+    roles].
+  family: SA - System And Services Acquisition
+  name: '[Information System Documentation]'
+SA-6:
   description: None
-  family: CA-4 - Security Assessment And Authorization
-  name: '[Security Certification]'
-CA-5:
+  family: SA - System And Services Acquisition
+  name: '[Software Usage Restrictions]'
+SA-7:
+  description: None
+  family: SA - System And Services Acquisition
+  name: '[User-Installed Software]'
+SA-8:
+  description: The organization applies information system security engineering principles
+    in the specification, design, development, implementation, and modification of
+    the information system.
+  family: SA - System And Services Acquisition
+  name: '[Security Engineering Principles]'
+SA-9:
   description: >-
     The organization:
 
-    a. Develops a plan of action and milestones for the information system to document
-    the organization�s planned remedial actions to correct weaknesses or deficiencies
-    noted during the assessment of the security controls and to reduce or eliminate
-    known vulnerabilities in the system; and
+    a. Requires that providers of external information system services comply with
+    organizational information security requirements and employ [Assignment: organization-defined
+    security controls] in accordance with applicable federal laws, Executive Orders,
+    directives, policies, regulations, standards, and guidance;
 
-    b. Updates existing plan of action and milestones [Assignment: organization-defined
-    frequency] based on the findings from security controls assessments, security
-    impact analyses, and continuous monitoring activities.
-  family: CA-5 - Security Assessment And Authorization
-  name: '[Plan Of Action And Milestones]'
-CA-6:
-  description: >-
-    The organization:
+    b. Defines and documents government oversight and user roles and responsibilities
+    with regard to external information system services; and
 
-    a. Assigns a senior-level executive or manager as the authorizing official for
-    the information system;
-
-    b. Ensures that the authorizing official authorizes the information system for
-    processing before commencing operations; and
-
-    c. Updates the security authorization [Assignment: organization-defined frequency].
-  family: CA-6 - Security Assessment And Authorization
-  name: '[Security Authorization]'
-CA-7:
-  description: >-
-    The organization develops a continuous monitoring strategy and implements a
-    continuous monitoring program that includes:
-
-    a. Establishment of [Assignment: organization-defined metrics] to be monitored;
-
-    b. Establishment of [Assignment: organization-defined frequencies] for monitoring
-    and [Assignment: organization-defined frequencies] for assessments supporting
-    such monitoring;
-
-    c. Ongoing security control assessments in accordance with the organizational
-    continuous monitoring strategy;
-
-    d. Ongoing security status monitoring of organization-defined metrics in accordance
-    with the organizational continuous monitoring strategy;
-
-    e. Correlation and analysis of security-related information generated by assessments
-    and monitoring;
-
-    f. Response actions to address results of the analysis of security-related information;
-    and
-
-    g. Reporting the security status of organization and the information system
-    to [Assignment: organization-defined personnel or roles] [Assignment: organization-defined
-    frequency].
-  family: CA-7 - Security Assessment And Authorization
-  name: '[Continuous Monitoring]'
-CA-8:
-  description: 'The organization conducts penetration testing [Assignment: organization-defined
-    frequency] on [Assignment: organization-defined information systems or system
-    components].'
-  family: CA-8 - Security Assessment And Authorization
-  name: '[Penetration Testing]'
-CA-9:
-  description: >-
-    The organization:
-
-    a. Authorizes internal connections of [Assignment: organization-defined information
-    system components or classes of components] to the information system; and
-
-    b. Documents, for each internal connection, the interface characteristics, security
-    requirements, and the nature of the information communicated.
-  family: CA-9 - Security Assessment And Authorization
-  name: '[Internal System Connections]'
+    c. Employs [Assignment: organization-defined processes, methods, and techniques]
+    to monitor security control compliance by external service providers on an ongoing
+    basis.
+  family: SA - System And Services Acquisition
+  name: '[External Information System Services]'
 SC-1:
   description: >-
     The organization:
@@ -2182,91 +2400,38 @@ SC-1:
 
     b.2. System and communications protection procedures [Assignment: organization-defined
     frequency].
-  family: SC-1 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[System And Communications Protection Policy And Procedures]'
-SC-2:
-  description: The information system separates user functionality (including user
-    interface services) from information system management functionality.
-  family: SC-2 - System And Communications Protection
-  name: '[Application Partitioning]'
-SC-3:
-  description: The information system isolates security functions from nonsecurity
-    functions.
-  family: SC-3 - System And Communications Protection
-  name: '[Security Function Isolation]'
-SC-4:
-  description: The information system prevents unauthorized and unintended information
-    transfer via shared system resources.
-  family: SC-4 - System And Communications Protection
-  name: '[Information In Shared Resources]'
-SC-5:
-  description: 'The information system protects against or limits the effects of
-    the following types of denial of service attacks: [Assignment: organization-defined
-    types of denial of service attacks or references to sources for such information]
-    by employing [Assignment: organization-defined security safeguards].'
-  family: SC-5 - System And Communications Protection
-  name: '[Denial Of Service Protection]'
-SC-6:
-  description: 'The information system protects the availability of resources by
-    allocating [Assignment: organization-defined resources] by [Selection (one or
-    more); priority; quota; [Assignment: organization-defined security safeguards]].'
-  family: SC-6 - System And Communications Protection
-  name: '[Resource Availability]'
-SC-7:
-  description: >-
-    The information system:
-
-    a. Monitors and controls communications at the external boundary of the system
-    and at key internal boundaries within the system;
-
-    b. Implements subnetworks for publicly accessible system components that are
-    [Selection: physically; logically] separated from internal organizational networks;
-    and
-
-    c. Connects to external networks or information systems only through managed
-    interfaces consisting of boundary protection devices arranged in accordance
-    with an organizational security architecture.
-  family: SC-7 - System And Communications Protection
-  name: '[Boundary Protection]'
-SC-8:
-  description: 'The information system protects the [Selection (one or more): confidentiality;
-    integrity] of transmitted information.'
-  family: SC-8 - System And Communications Protection
-  name: '[Transmission Confidentiality And Integrity]'
-SC-9:
-  description: None
-  family: SC-9 - System And Communications Protection
-  name: '[Transmission Confidentiality]'
 SC-10:
   description: 'The information system terminates the network connection associated
     with a communications session at the end of the session or after [Assignment:
     organization-defined time period] of inactivity.'
-  family: SC-10 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Network Disconnect]'
 SC-11:
-  description: 'The information system establishes a trusted communications path
-    between the user and the following security functions of the system: [Assignment:
-    organization-defined security functions to include at a minimum, information
-    system authentication and re-authentication].'
-  family: SC-11 - System And Communications Protection
+  description: 'The information system establishes a trusted communications path between
+    the user and the following security functions of the system: [Assignment: organization-defined
+    security functions to include at a minimum, information system authentication
+    and re-authentication].'
+  family: SC - System And Communications Protection
   name: '[Trusted Path]'
 SC-12:
-  description: 'The organization establishes and manages cryptographic keys for
-    required cryptography employed within the information system in accordance with
-    [Assignment: organization-defined requirements for key generation, distribution,
-    storage, access, and destruction].'
-  family: SC-12 - System And Communications Protection
+  description: 'The organization establishes and manages cryptographic keys for required
+    cryptography employed within the information system in accordance with [Assignment:
+    organization-defined requirements for key generation, distribution, storage, access,
+    and destruction].'
+  family: SC - System And Communications Protection
   name: '[Cryptographic Key Establishment And Management]'
 SC-13:
   description: 'The information system implements [Assignment: organization-defined
     cryptographic uses and type of cryptography required for each use] in accordance
     with applicable federal laws, Executive Orders, directives, policies, regulations,
     and standards.'
-  family: SC-13 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Cryptographic Protection]'
 SC-14:
   description: None
-  family: SC-14 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Public Access Protections]'
 SC-15:
   description: >-
@@ -2276,21 +2441,20 @@ SC-15:
     exceptions: [Assignment: organization-defined exceptions where remote activation
     is to be allowed]; and
 
-    b. Provides an explicit indication of use to users physically present at the
-    devices.
-  family: SC-15 - System And Communications Protection
+    b. Provides an explicit indication of use to users physically present at the devices.
+  family: SC - System And Communications Protection
   name: '[Collaborative Computing Devices]'
 SC-16:
   description: 'The information system associates [Assignment: organization-defined
-    security attributes] with information exchanged between information systems
-    and between system components.'
-  family: SC-16 - System And Communications Protection
+    security attributes] with information exchanged between information systems and
+    between system components.'
+  family: SC - System And Communications Protection
   name: '[Transmission Of Security Attributes]'
 SC-17:
   description: 'The organization issues public key certificates under an [Assignment:
-    organization-defined certificate policy] or obtains public key certificates
-    from an approved service provider.'
-  family: SC-17 - System And Communications Protection
+    organization-defined certificate policy] or obtains public key certificates from
+    an approved service provider.'
+  family: SC - System And Communications Protection
   name: '[Public Key Infrastructure Certificates]'
 SC-18:
   description: >-
@@ -2298,95 +2462,104 @@ SC-18:
 
     a. Defines acceptable and unacceptable mobile code and mobile code technologies;
 
-    b. Establishes usage restrictions and implementation guidance for acceptable
-    mobile code and mobile code technologies; and
+    b. Establishes usage restrictions and implementation guidance for acceptable mobile
+    code and mobile code technologies; and
 
     c. Authorizes, monitors, and controls the use of mobile code within the information
     system.
-  family: SC-18 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Mobile Code]'
 SC-19:
   description: >-
     The organization:
 
-    a. Establishes usage restrictions and implementation guidance for Voice over
-    Internet Protocol (VoIP) technologies based on the potential to cause damage
-    to the information system if used maliciously; and
+    a. Establishes usage restrictions and implementation guidance for Voice over Internet
+    Protocol (VoIP) technologies based on the potential to cause damage to the information
+    system if used maliciously; and
 
-    b. Authorizes, monitors, and controls the use of VoIP within the information
-    system.
-  family: SC-19 - System And Communications Protection
+    b. Authorizes, monitors, and controls the use of VoIP within the information system.
+  family: SC - System And Communications Protection
   name: '[Voice Over Internet Protocol]'
+SC-2:
+  description: The information system separates user functionality (including user
+    interface services) from information system management functionality.
+  family: SC - System And Communications Protection
+  name: '[Application Partitioning]'
 SC-20:
   description: >-
     The information system:
 
-    a. Provides additional data origin authentication and integrity verification
-    artifacts along with the authoritative name resolution data the system returns
-    in response to external name/address resolution queries; and
+    a. Provides additional data origin authentication and integrity verification artifacts
+    along with the authoritative name resolution data the system returns in response
+    to external name/address resolution queries; and
 
-    b. Provides the means to indicate the security status of child zones and (if
-    the child supports secure resolution services) to enable verification of a chain
-    of trust among parent and child domains, when operating as part of a distributed,
+    b. Provides the means to indicate the security status of child zones and (if the
+    child supports secure resolution services) to enable verification of a chain of
+    trust among parent and child domains, when operating as part of a distributed,
     hierarchical namespace.
-  family: SC-20 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Secure Name / Address Resolution Service (Authoritative Source)]'
 SC-21:
   description: The information system requests and performs data origin authentication
-    and data integrity verification on the name/address resolution responses the
-    system receives from authoritative sources.
-  family: SC-21 - System And Communications Protection
+    and data integrity verification on the name/address resolution responses the system
+    receives from authoritative sources.
+  family: SC - System And Communications Protection
   name: '[Secure Name / Address Resolution Service (Recursive Or Caching Resolver)]'
 SC-22:
   description: The information systems that collectively provide name/address resolution
     service for an organization are fault-tolerant and implement internal/external
     role separation.
-  family: SC-22 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Architecture And Provisioning For Name / Address Resolution Service]'
 SC-23:
   description: The information system protects the authenticity of communications
     sessions.
-  family: SC-23 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Session Authenticity]'
 SC-24:
   description: 'The information system fails to a [Assignment: organization-defined
     known-state] for [Assignment: organization-defined types of failures] preserving
     [Assignment: organization-defined system state information] in failure.'
-  family: SC-24 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Fail In Known State]'
 SC-25:
   description: 'The organization employs [Assignment: organization-defined information
     system components] with minimal functionality and information storage.'
-  family: SC-25 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Thin Nodes]'
 SC-26:
-  description: The information system includes components specifically designed
-    to be the target of malicious attacks for the purpose of detecting, deflecting,
-    and analyzing such attacks.
-  family: SC-26 - System And Communications Protection
+  description: The information system includes components specifically designed to
+    be the target of malicious attacks for the purpose of detecting, deflecting, and
+    analyzing such attacks.
+  family: SC - System And Communications Protection
   name: '[Honeypots]'
 SC-27:
   description: 'The information system includes: [Assignment: organization-defined
     platform-independent applications].'
-  family: SC-27 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Platform-Independent Applications]'
 SC-28:
   description: 'The information system protects the [Selection (one or more): confidentiality;
     integrity] of [Assignment: organization-defined information at rest].'
-  family: SC-28 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Protection Of Information At Rest]'
 SC-29:
   description: 'The organization employs a diverse set of information technologies
-    for [Assignment: organization-defined information system components] in the
-    implementation of the information system.'
-  family: SC-29 - System And Communications Protection
+    for [Assignment: organization-defined information system components] in the implementation
+    of the information system.'
+  family: SC - System And Communications Protection
   name: '[Heterogeneity]'
+SC-3:
+  description: The information system isolates security functions from nonsecurity
+    functions.
+  family: SC - System And Communications Protection
+  name: '[Security Function Isolation]'
 SC-30:
   description: 'The organization employs [Assignment: organization-defined concealment
     and misdirection techniques] for [Assignment: organization-defined information
     systems] at [Assignment: organization-defined time periods] to confuse and mislead
     adversaries.'
-  family: SC-30 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Concealment And Misdirection]'
 SC-31:
   description: >-
@@ -2397,18 +2570,18 @@ SC-31:
     (one or more): storage; timing] channels; and
 
     b. Estimates the maximum bandwidth of those channels.
-  family: SC-31 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Covert Channel Analysis]'
 SC-32:
   description: 'The organization partitions the information system into [Assignment:
     organization-defined information system components] residing in separate physical
     domains or environments based on [Assignment: organization-defined circumstances
     for physical separation of components].'
-  family: SC-32 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Information System Partitioning]'
 SC-33:
   description: None
-  family: SC-33 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Transmission Preparation Integrity]'
 SC-34:
   description: >-
@@ -2420,59 +2593,64 @@ SC-34:
 
     b. Loads and executes [Assignment: organization-defined applications] from hardware-enforced,
     read-only media.
-  family: SC-34 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Non-Modifiable Executable Programs]'
 SC-35:
-  description: The information system includes components that proactively seek
-    to identify malicious websites and/or web-based malicious code.
-  family: SC-35 - System And Communications Protection
+  description: The information system includes components that proactively seek to
+    identify malicious websites and/or web-based malicious code.
+  family: SC - System And Communications Protection
   name: '[Honeyclients]'
 SC-36:
   description: 'The organization distributes [Assignment: organization-defined processing
     and storage] across multiple physical locations.'
-  family: SC-36 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Distributed Processing And Storage]'
 SC-37:
   description: 'The organization employs [Assignment: organization-defined out-of-band
     channels] for the physical delivery or electronic transmission of [Assignment:
-    organization-defined information, information system components, or devices]
-    to [Assignment: organization-defined individuals or information systems].'
-  family: SC-37 - System And Communications Protection
+    organization-defined information, information system components, or devices] to
+    [Assignment: organization-defined individuals or information systems].'
+  family: SC - System And Communications Protection
   name: '[Out-Of-Band Channels]'
 SC-38:
   description: 'The organization employs [Assignment: organization-defined operations
     security safeguards] to protect key organizational information throughout the
     system development life cycle.'
-  family: SC-38 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Operations Security]'
 SC-39:
-  description: The information system maintains a separate execution domain for
-    each executing process.
-  family: SC-39 - System And Communications Protection
+  description: The information system maintains a separate execution domain for each
+    executing process.
+  family: SC - System And Communications Protection
   name: '[Process Isolation]'
+SC-4:
+  description: The information system prevents unauthorized and unintended information
+    transfer via shared system resources.
+  family: SC - System And Communications Protection
+  name: '[Information In Shared Resources]'
 SC-40:
   description: 'The information system protects external and internal [Assignment:
-    organization-defined wireless links] from [Assignment: organization-defined
-    types of signal parameter attacks or references to sources for such attacks].'
-  family: SC-40 - System And Communications Protection
+    organization-defined wireless links] from [Assignment: organization-defined types
+    of signal parameter attacks or references to sources for such attacks].'
+  family: SC - System And Communications Protection
   name: '[Wireless Link Protection]'
 SC-41:
   description: 'The organization physically disables or removes [Assignment: organization-defined
     connection ports or input/output devices] on [Assignment: organization-defined
     information systems or information system components].'
-  family: SC-41 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Port And I/O Device Access]'
 SC-42:
   description: >-
     The information system:
 
     a. Prohibits the remote activation of environmental sensing capabilities with
-    the following exceptions: [Assignment: organization-defined exceptions where
-    remote activation of sensors is allowed]; and
+    the following exceptions: [Assignment: organization-defined exceptions where remote
+    activation of sensors is allowed]; and
 
     b. Provides an explicit indication of sensor use to [Assignment: organization-defined
     class of users].
-  family: SC-42 - System And Communications Protection
+  family: SC - System And Communications Protection
   name: '[Sensor Capability And Data]'
 SC-43:
   description: >-
@@ -2482,15 +2660,52 @@ SC-43:
     organization-defined information system components] based on the potential to
     cause damage to the information system if used maliciously; and
 
-    b. Authorizes, monitors, and controls the use of such components within the
-    information system.
-  family: SC-43 - System And Communications Protection
+    b. Authorizes, monitors, and controls the use of such components within the information
+    system.
+  family: SC - System And Communications Protection
   name: '[Usage Restrictions]'
 SC-44:
-  description: 'The organization employs a detonation chamber capability within
-    [Assignment: organization-defined information system, system component, or location].'
-  family: SC-44 - System And Communications Protection
+  description: 'The organization employs a detonation chamber capability within [Assignment:
+    organization-defined information system, system component, or location].'
+  family: SC - System And Communications Protection
   name: '[Detonation Chambers]'
+SC-5:
+  description: 'The information system protects against or limits the effects of the
+    following types of denial of service attacks: [Assignment: organization-defined
+    types of denial of service attacks or references to sources for such information]
+    by employing [Assignment: organization-defined security safeguards].'
+  family: SC - System And Communications Protection
+  name: '[Denial Of Service Protection]'
+SC-6:
+  description: 'The information system protects the availability of resources by allocating
+    [Assignment: organization-defined resources] by [Selection (one or more); priority;
+    quota; [Assignment: organization-defined security safeguards]].'
+  family: SC - System And Communications Protection
+  name: '[Resource Availability]'
+SC-7:
+  description: >-
+    The information system:
+
+    a. Monitors and controls communications at the external boundary of the system
+    and at key internal boundaries within the system;
+
+    b. Implements subnetworks for publicly accessible system components that are [Selection:
+    physically; logically] separated from internal organizational networks; and
+
+    c. Connects to external networks or information systems only through managed interfaces
+    consisting of boundary protection devices arranged in accordance with an organizational
+    security architecture.
+  family: SC - System And Communications Protection
+  name: '[Boundary Protection]'
+SC-8:
+  description: 'The information system protects the [Selection (one or more): confidentiality;
+    integrity] of transmitted information.'
+  family: SC - System And Communications Protection
+  name: '[Transmission Confidentiality And Integrity]'
+SC-9:
+  description: None
+  family: SC - System And Communications Protection
+  name: '[Transmission Confidentiality]'
 SI-1:
   description: >-
     The organization:
@@ -2512,8 +2727,68 @@ SI-1:
 
     b.2. System and information integrity procedures [Assignment: organization-defined
     frequency].
-  family: SI-1 - System And Information Integrity
+  family: SI - System And Information Integrity
   name: '[System And Information Integrity Policy And Procedures]'
+SI-10:
+  description: 'The information system checks the validity of [Assignment: organization-defined
+    information inputs].'
+  family: SI - System And Information Integrity
+  name: '[Information Input Validation]'
+SI-11:
+  description: >-
+    The information system:
+
+    a. Generates error messages that provide information necessary for corrective
+    actions without revealing information that could be exploited by adversaries;
+    and
+
+    b. Reveals error messages only to [Assignment: organization-defined personnel
+    or roles].
+  family: SI - System And Information Integrity
+  name: '[Error Handling]'
+SI-12:
+  description: The organization handles and retains information within the information
+    system and information output from the system in accordance with applicable federal
+    laws, Executive Orders, directives, policies, regulations, standards, and operational
+    requirements.
+  family: SI - System And Information Integrity
+  name: '[Information Handling And Retention]'
+SI-13:
+  description: >-
+    The organization:
+
+    a. Determines mean time to failure (MTTF) for [Assignment: organization-defined
+    information system components] in specific environments of operation; and
+
+    b. Provides substitute information system components and a means to exchange active
+    and standby components at [Assignment: organization-defined MTTF substitution
+    criteria].
+  family: SI - System And Information Integrity
+  name: '[Predictable Failure Prevention]'
+SI-14:
+  description: 'The organization implements non-persistent [Assignment: organization-defined
+    information system components and services] that are initiated in a known state
+    and terminated [Selection (one or more): upon end of session of use; periodically
+    at [Assignment: organization-defined frequency]].'
+  family: SI - System And Information Integrity
+  name: '[Non-Persistence]'
+SI-15:
+  description: 'The information system validates information output from [Assignment:
+    organization-defined software programs and/or applications] to ensure that the
+    information is consistent with the expected content.'
+  family: SI - System And Information Integrity
+  name: '[Information Output Filtering]'
+SI-16:
+  description: 'The information system implements [Assignment: organization-defined
+    security safeguards] to protect its memory from unauthorized code execution.'
+  family: SI - System And Information Integrity
+  name: '[Memory Protection]'
+SI-17:
+  description: 'The information system implements [Assignment: organization-defined
+    fail-safe procedures] when [Assignment: organization-defined failure conditions
+    occur].'
+  family: SI - System And Information Integrity
+  name: '[Fail-Safe Procedures]'
 SI-2:
   description: >-
     The organization:
@@ -2528,14 +2803,14 @@ SI-2:
 
     d. Incorporates flaw remediation into the organizational configuration management
     process.
-  family: SI-2 - System And Information Integrity
+  family: SI - System And Information Integrity
   name: '[Flaw Remediation]'
 SI-3:
   description: >-
     The organization:
 
-    a. Employs malicious code protection mechanisms at information system entry
-    and exit points to detect and eradicate malicious code;
+    a. Employs malicious code protection mechanisms at information system entry and
+    exit points to detect and eradicate malicious code;
 
     b. Updates malicious code protection mechanisms whenever new releases are available
     in accordance with organizational configuration management policy and procedures;
@@ -2543,18 +2818,18 @@ SI-3:
     c. Configures malicious code protection mechanisms to:
 
     c.1. Perform periodic scans of the information system [Assignment: organization-defined
-    frequency] and real-time scans of files from external sources at [Selection
-    (one or more); endpoint; network entry/exit points] as the files are downloaded,
-    opened, or executed in accordance with organizational security policy; and
+    frequency] and real-time scans of files from external sources at [Selection (one
+    or more); endpoint; network entry/exit points] as the files are downloaded, opened,
+    or executed in accordance with organizational security policy; and
 
     c.2. [Selection (one or more): block malicious code; quarantine malicious code;
     send alert to administrator; [Assignment: organization-defined action]] in response
     to malicious code detection; and
 
-    d. Addresses the receipt of false positives during malicious code detection
-    and eradication and the resulting potential impact on the availability of the
-    information system.
-  family: SI-3 - System And Information Integrity
+    d. Addresses the receipt of false positives during malicious code detection and
+    eradication and the resulting potential impact on the availability of the information
+    system.
+  family: SI - System And Information Integrity
   name: '[Malicious Code Protection]'
 SI-4:
   description: >-
@@ -2582,18 +2857,18 @@ SI-4:
     access, modification, and deletion;
 
     e. Heightens the level of information system monitoring activity whenever there
-    is an indication of increased risk to organizational operations and assets,
-    individuals, other organizations, or the Nation based on law enforcement information,
-    intelligence information, or other credible sources of information;
+    is an indication of increased risk to organizational operations and assets, individuals,
+    other organizations, or the Nation based on law enforcement information, intelligence
+    information, or other credible sources of information;
 
     f. Obtains legal opinion with regard to information system monitoring activities
     in accordance with applicable federal laws, Executive Orders, directives, policies,
     or regulations; and
 
-    g. Provides [Assignment: organization-defined information system monitoring
-    information] to [Assignment: organization-defined personnel or roles] [Selection
-    (one or more): as needed; [Assignment: organization-defined frequency]].
-  family: SI-4 - System And Information Integrity
+    g. Provides [Assignment: organization-defined information system monitoring information]
+    to [Assignment: organization-defined personnel or roles] [Selection (one or more):
+    as needed; [Assignment: organization-defined frequency]].
+  family: SI - System And Information Integrity
   name: '[Information System Monitoring]'
 SI-5:
   description: >-
@@ -2602,8 +2877,7 @@ SI-5:
     a. Receives information system security alerts, advisories, and directives from
     [Assignment: organization-defined external organizations] on an ongoing basis;
 
-    b. Generates internal security alerts, advisories, and directives as deemed
-    necessary;
+    b. Generates internal security alerts, advisories, and directives as deemed necessary;
 
     c. Disseminates security alerts, advisories, and directives to: [Selection (one
     or more): [Assignment: organization-defined personnel or roles]; [Assignment:
@@ -2612,7 +2886,7 @@ SI-5:
 
     d. Implements security directives in accordance with established time frames,
     or notifies the issuing organization of the degree of noncompliance.
-  family: SI-5 - System And Information Integrity
+  family: SI - System And Information Integrity
   name: '[Security Alerts, Advisories, And Directives]'
 SI-6:
   description: >-
@@ -2625,19 +2899,18 @@ SI-6:
     system transitional states]; upon command by user with appropriate privilege;
     [Assignment: organization-defined frequency]];
 
-    c. Notifies [Assignment: organization-defined personnel or roles] of failed
-    security verification tests; and
+    c. Notifies [Assignment: organization-defined personnel or roles] of failed security
+    verification tests; and
 
-    d. [Selection (one or more): shuts the information system down; restarts the
-    information system; [Assignment: organization-defined alternative action(s)]]
-    when anomalies are discovered.
-  family: SI-6 - System And Information Integrity
+    d. [Selection (one or more): shuts the information system down; restarts the information
+    system; [Assignment: organization-defined alternative action(s)]] when anomalies
+    are discovered.
+  family: SI - System And Information Integrity
   name: '[Security Function Verification]'
 SI-7:
-  description: 'The organization employs integrity verification tools to detect
-    unauthorized changes to [Assignment: organization-defined software, firmware,
-    and information].'
-  family: SI-7 - System And Information Integrity
+  description: 'The organization employs integrity verification tools to detect unauthorized
+    changes to [Assignment: organization-defined software, firmware, and information].'
+  family: SI - System And Information Integrity
   name: '[Software, Firmware, And Information Integrity]'
 SI-8:
   description: >-
@@ -2648,379 +2921,9 @@ SI-8:
 
     b. Updates spam protection mechanisms when new releases are available in accordance
     with organizational configuration management policy and procedures.
-  family: SI-8 - System And Information Integrity
+  family: SI - System And Information Integrity
   name: '[Spam Protection]'
 SI-9:
   description: None
-  family: SI-9 - System And Information Integrity
+  family: SI - System And Information Integrity
   name: '[Information Input Restrictions]'
-SI-10:
-  description: 'The information system checks the validity of [Assignment: organization-defined
-    information inputs].'
-  family: SI-10 - System And Information Integrity
-  name: '[Information Input Validation]'
-SI-11:
-  description: >-
-    The information system:
-
-    a. Generates error messages that provide information necessary for corrective
-    actions without revealing information that could be exploited by adversaries;
-    and
-
-    b. Reveals error messages only to [Assignment: organization-defined personnel
-    or roles].
-  family: SI-11 - System And Information Integrity
-  name: '[Error Handling]'
-SI-12:
-  description: The organization handles and retains information within the information
-    system and information output from the system in accordance with applicable
-    federal laws, Executive Orders, directives, policies, regulations, standards,
-    and operational requirements.
-  family: SI-12 - System And Information Integrity
-  name: '[Information Handling And Retention]'
-SI-13:
-  description: >-
-    The organization:
-
-    a. Determines mean time to failure (MTTF) for [Assignment: organization-defined
-    information system components] in specific environments of operation; and
-
-    b. Provides substitute information system components and a means to exchange
-    active and standby components at [Assignment: organization-defined MTTF substitution
-    criteria].
-  family: SI-13 - System And Information Integrity
-  name: '[Predictable Failure Prevention]'
-SI-14:
-  description: 'The organization implements non-persistent [Assignment: organization-defined
-    information system components and services] that are initiated in a known state
-    and terminated [Selection (one or more): upon end of session of use; periodically
-    at [Assignment: organization-defined frequency]].'
-  family: SI-14 - System And Information Integrity
-  name: '[Non-Persistence]'
-SI-15:
-  description: 'The information system validates information output from [Assignment:
-    organization-defined software programs and/or applications] to ensure that the
-    information is consistent with the expected content.'
-  family: SI-15 - System And Information Integrity
-  name: '[Information Output Filtering]'
-SI-16:
-  description: 'The information system implements [Assignment: organization-defined
-    security safeguards] to protect its memory from unauthorized code execution.'
-  family: SI-16 - System And Information Integrity
-  name: '[Memory Protection]'
-SI-17:
-  description: 'The information system implements [Assignment: organization-defined
-    fail-safe procedures] when [Assignment: organization-defined failure conditions
-    occur].'
-  family: SI-17 - System And Information Integrity
-  name: '[Fail-Safe Procedures]'
-SA-1:
-  description: >-
-    The organization:
-
-    a. Develops, documents, and disseminates to [Assignment: organization-defined
-    personnel or roles]:
-
-    a.1. A system and services acquisition policy that addresses purpose, scope,
-    roles, responsibilities, management commitment, coordination among organizational
-    entities, and compliance; and
-
-    a.2. Procedures to facilitate the implementation of the system and services
-    acquisition policy and associated system and services acquisition controls;
-    and
-
-    b. Reviews and updates the current:
-
-    b.1. System and services acquisition policy [Assignment: organization-defined
-    frequency]; and
-
-    b.2. System and services acquisition procedures [Assignment: organization-defined
-    frequency].
-  family: SA-1 - System And Services Acquisition
-  name: '[System And Services Acquisition Policy And Procedures]'
-SA-2:
-  description: >-
-    The organization:
-
-    a. Determines information security requirements for the information system or
-    information system service in mission/business process planning;
-
-    b. Determines, documents, and allocates the resources required to protect the
-    information system or information system service as part of its capital planning
-    and investment control process; and
-
-    c. Establishes a discrete line item for information security in organizational
-    programming and budgeting documentation.
-  family: SA-2 - System And Services Acquisition
-  name: '[Allocation Of Resources]'
-SA-3:
-  description: >-
-    The organization:
-
-    a. Manages the information system using [Assignment: organization-defined system
-    development life cycle] that incorporates information security considerations;
-
-    b. Defines and documents information security roles and responsibilities throughout
-    the system development life cycle;
-
-    c. Identifies individuals having information security roles and responsibilities;
-    and
-
-    d. Integrates the organizational information security risk management process
-    into system development life cycle activities.
-  family: SA-3 - System And Services Acquisition
-  name: '[System Development Life Cycle]'
-SA-4:
-  description: >-
-    The organization includes the following requirements, descriptions, and criteria,
-    explicitly or by reference, in the acquisition contract for the information
-    system, system component, or information system service in accordance with applicable
-    federal laws, Executive Orders, directives, policies, regulations, standards,
-    guidelines, and organizational mission/business needs:
-
-    a. Security functional requirements;
-
-    b. Security strength requirements;
-
-    c. Security assurance requirements;
-
-    d. Security-related documentation requirements;
-
-    e. Requirements for protecting security-related documentation;
-
-    f. Description of the information system development environment and environment
-    in which the system is intended to operate; and
-
-    g. Acceptance criteria.
-  family: SA-4 - System And Services Acquisition
-  name: '[Acquisition Process]'
-SA-5:
-  description: >-
-    The organization:
-
-    a. Obtains administrator documentation for the information system, system component,
-    or information system service that describes:
-
-    a.1. Secure configuration, installation, and operation of the system, component,
-    or service;
-
-    a.2. Effective use and maintenance of security functions/mechanisms; and
-
-    a.3. Known vulnerabilities regarding configuration and use of administrative
-    (i.e., privileged) functions;
-
-    b. Obtains user documentation for the information system, system component,
-    or information system service that describes:
-
-    b.1. User-accessible security functions/mechanisms and how to effectively use
-    those security functions/mechanisms;
-
-    b.2. Methods for user interaction, which enables individuals to use the system,
-    component, or service in a more secure manner; and
-
-    b.3. User responsibilities in maintaining the security of the system, component,
-    or service;
-
-    c. Documents attempts to obtain information system, system component, or information
-    system service documentation when such documentation is either unavailable or
-    nonexistent and takes [Assignment: organization-defined actions] in response;
-
-    d. Protects documentation as required, in accordance with the risk management
-    strategy; and
-
-    e. Distributes documentation to [Assignment: organization-defined personnel
-    or roles].
-  family: SA-5 - System And Services Acquisition
-  name: '[Information System Documentation]'
-SA-6:
-  description: None
-  family: SA-6 - System And Services Acquisition
-  name: '[Software Usage Restrictions]'
-SA-7:
-  description: None
-  family: SA-7 - System And Services Acquisition
-  name: '[User-Installed Software]'
-SA-8:
-  description: The organization applies information system security engineering
-    principles in the specification, design, development, implementation, and modification
-    of the information system.
-  family: SA-8 - System And Services Acquisition
-  name: '[Security Engineering Principles]'
-SA-9:
-  description: >-
-    The organization:
-
-    a. Requires that providers of external information system services comply with
-    organizational information security requirements and employ [Assignment: organization-defined
-    security controls] in accordance with applicable federal laws, Executive Orders,
-    directives, policies, regulations, standards, and guidance;
-
-    b. Defines and documents government oversight and user roles and responsibilities
-    with regard to external information system services; and
-
-    c. Employs [Assignment: organization-defined processes, methods, and techniques]
-    to monitor security control compliance by external service providers on an ongoing
-    basis.
-  family: SA-9 - System And Services Acquisition
-  name: '[External Information System Services]'
-SA-10:
-  description: >-
-    The organization requires the developer of the information system, system component,
-    or information system service to:
-
-    a. Perform configuration management during system, component, or service [Selection
-    (one or more): design; development; implementation; operation];
-
-    b. Document, manage, and control the integrity of changes to [Assignment: organization-defined
-    configuration items under configuration management];
-
-    c. Implement only organization-approved changes to the system, component, or
-    service;
-
-    d. Document approved changes to the system, component, or service and the potential
-    security impacts of such changes; and
-
-    e. Track security flaws and flaw resolution within the system, component, or
-    service and report findings to [Assignment: organization-defined personnel].
-  family: SA-10 - System And Services Acquisition
-  name: '[Developer Configuration Management]'
-SA-11:
-  description: >-
-    The organization requires the developer of the information system, system component,
-    or information system service to:
-
-    a. Create and implement a security assessment plan;
-
-    b. Perform [Selection (one or more): unit; integration; system; regression]
-    testing/evaluation at [Assignment: organization-defined depth and coverage];
-
-    c. Produce evidence of the execution of the security assessment plan and the
-    results of the security testing/evaluation;
-
-    d. Implement a verifiable flaw remediation process; and
-
-    e. Correct flaws identified during security testing/evaluation.
-  family: SA-11 - System And Services Acquisition
-  name: '[Developer Security Testing And Evaluation]'
-SA-12:
-  description: 'The organization protects against supply chain threats to the information
-    system, system component, or information system service by employing [Assignment:
-    organization-defined security safeguards] as part of a comprehensive, defense-in-breadth
-    information security strategy.'
-  family: SA-12 - System And Services Acquisition
-  name: '[Supply Chain Protection]'
-SA-13:
-  description: >-
-    The organization:
-
-    a. Describes the trustworthiness required in the [Assignment: organization-defined
-    information system, information system component, or information system service]
-    supporting its critical missions/business functions; and
-
-    b. Implements [Assignment: organization-defined assurance overlay] to achieve
-    such trustworthiness.
-  family: SA-13 - System And Services Acquisition
-  name: '[Trustworthiness]'
-SA-14:
-  description: 'The organization identifies critical information system components
-    and functions by performing a criticality analysis for [Assignment: organization-defined
-    information systems, information system components, or information system services]
-    at [Assignment: organization-defined decision points in the system development
-    life cycle].'
-  family: SA-14 - System And Services Acquisition
-  name: '[Criticality Analysis]'
-SA-15:
-  description: >-
-    The organization:
-
-    a. Requires the developer of the information system, system component, or information
-    system service to follow a documented development process that:
-
-    a.1. Explicitly addresses security requirements;
-
-    a.2. Identifies the standards and tools used in the development process;
-
-    a.3. Documents the specific tool options and tool configurations used in the
-    development process; and
-
-    a.4. Documents, manages, and ensures the integrity of changes to the process
-    and/or tools used in development; and
-
-    b. Reviews the development process, standards, tools, and tool options/configurations
-    [Assignment: organization-defined frequency] to determine if the process, standards,
-    tools, and tool options/configurations selected and employed can satisfy [Assignment:
-    organization-defined security requirements].
-  family: SA-15 - System And Services Acquisition
-  name: '[Development Process, Standards, And Tools]'
-SA-16:
-  description: 'The organization requires the developer of the information system,
-    system component, or information system service to provide [Assignment: organization-defined
-    training] on the correct use and operation of the implemented security functions,
-    controls, and/or mechanisms.'
-  family: SA-16 - System And Services Acquisition
-  name: '[Developer-Provided Training]'
-SA-17:
-  description: >-
-    The organization requires the developer of the information system, system component,
-    or information system service to produce a design specification and security
-    architecture that:
-
-    a. Is consistent with and supportive of the organization�s security architecture
-    which is established within and is an integrated part of the organization�s
-    enterprise architecture;
-
-    b. Accurately and completely describes the required security functionality,
-    and the allocation of security controls among physical and logical components;
-    and
-
-    c. Expresses how individual security functions, mechanisms, and services work
-    together to provide required security capabilities and a unified approach to
-    protection.
-  family: SA-17 - System And Services Acquisition
-  name: '[Developer Security Architecture And Design]'
-SA-18:
-  description: The organization implements a tamper protection program for the information
-    system, system component, or information system service.
-  family: SA-18 - System And Services Acquisition
-  name: '[Tamper Resistance And Detection]'
-SA-19:
-  description: >-
-    The organization:
-
-    a. Develops and implements anti-counterfeit policy and procedures that include
-    the means to detect and prevent counterfeit components from entering the information
-    system; and
-
-    b. Reports counterfeit information system components to [Selection (one or more):
-    source of counterfeit component; [Assignment: organization-defined external
-    reporting organizations]; [Assignment: organization-defined personnel or roles]].
-  family: SA-19 - System And Services Acquisition
-  name: '[Component Authenticity]'
-SA-20:
-  description: 'The organization re-implements or custom develops [Assignment: organization-defined
-    critical information system components].'
-  family: SA-20 - System And Services Acquisition
-  name: '[Customized Development Of Critical Components]'
-SA-21:
-  description: >-
-    The organization requires that the developer of [Assignment: organization-defined
-    information system, system component, or information system service]:
-
-    a. Have appropriate access authorizations as determined by assigned [Assignment:
-    organization-defined official government duties]; and
-
-    b. Satisfy [Assignment: organization-defined additional personnel screening
-    criteria].
-  family: SA-21 - System And Services Acquisition
-  name: '[Developer Screening]'
-SA-22:
-  description: >-
-    The organization:
-
-    a. Replaces information system components when support for the components is
-    no longer available from the developer, vendor, or manufacturer; and
-
-    b. Provides justification and documents approval for the continued use of unsupported
-    system components required to satisfy mission/business needs.
-  family: SA-22 - System And Services Acquisition
-  name: '[Unsupported System Components]'
