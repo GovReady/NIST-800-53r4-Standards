@@ -1,0 +1,14 @@
+schema_version: "1.0.0"
+name: NIST SP 800-53r4 Standards
+metadata:
+  description: "NIST Special Publication 800-53 Revision 4 Standards"
+  maintainers:
+    - joshtauberer@govready.com
+    - gregelin@govready.com
+standards:
+  - ./NIST-800-53r4.yaml
+certifications:
+  - ./NIST-800-53r4_all.yaml
+  - ./FISMA-Low.yaml
+  - ./FISMA-Medium.yaml
+  - ./FISMA-High.yaml
