@@ -1,0 +1,38 @@
+- name: NIST-800-53r4
+- AT-2:
+    description: >-
+      The organization provides basic security awareness training to information system
+      users (including managers, senior executives, and contractors):
+
+      a. As part of initial training for new users;
+
+      b. When required by information system changes; and
+
+      c. [Assignment: organization-defined frequency] thereafter.
+    family: AT-2 - Awareness And Training
+    name: '[Security Awareness Training]'
+- AT-3:
+    description: >-
+      The organization provides role-based security training to personnel with assigned
+      security roles and responsibilities:
+
+      a. Before authorizing access to the information system or performing assigned
+      duties;
+
+      b. When required by information system changes; and
+
+      c. [Assignment: organization-defined frequency] thereafter.
+    family: AT-3 - Awareness And Training
+    name: '[Role-Based Security Training]'
+- AT-4:
+    description: >-
+      The organization:
+
+      a. Documents and monitors individual information system security training activities
+      including basic security awareness training and specific information system
+      security training; and
+
+      b. Retains individual training records for [Assignment: organization-defined
+      time period].
+    family: AT-4 - Awareness And Training
+    name: '[Security Training Records]'
